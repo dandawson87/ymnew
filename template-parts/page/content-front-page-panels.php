@@ -29,14 +29,7 @@ global $twentyseventeencounter;
 
 	<div class="panel-content">
 		<div class="wrap">
-			<header class="entry-header">
-				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-
-				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
-
-			</header><!-- .entry-header -->
-
-			<div class="entry-content">
+			<div class="entry-content-ym">
 				<?php
 					/* translators: %s: Name of current post */
 					the_content( sprintf(
@@ -44,6 +37,9 @@ global $twentyseventeencounter;
 						get_the_title()
 					) );
 				?>
+<?php if( get_field('cta_title') && get_field('cta_link') ): ?>
+    <div class='ymctabutton'><a href='<?php the_field('cta_link'); ?>'><button type='button'><?php the_field('cta_title'); ?></button></a></div>
+<?php endif; ?>
 			</div><!-- .entry-content -->
 
 			<?php

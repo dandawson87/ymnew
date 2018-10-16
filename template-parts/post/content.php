@@ -9,8 +9,26 @@
  * @since 1.0
  * @version 1.2
  */
-
 ?>
+<style>
+#masthead {
+	padding-top:20px !important;
+}
+#page {
+	margin-top:50px !important;
+}	
+#content {
+	padding-top:0px !important;
+	text-align:justify !important;
+}
+.top-menu {
+	margin-left:8%;
+	margin-bottom:1em;
+}
+.content-area {
+	padding-top:10px
+}
+</style>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
@@ -44,7 +62,7 @@
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 		<div class="post-thumbnail">
 			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
+				<?php //the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
 			</a>
 		</div><!-- .post-thumbnail -->
 	<?php endif; ?>

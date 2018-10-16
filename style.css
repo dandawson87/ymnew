@@ -57,9 +57,14 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
+@font-face {
+    font-family: ymtitle;
+    src: url('../../uploads/2018/09/BebasNeue-Bold.ttf');
+}
 
 body {
 	margin: 0;
+	overflow-x:hidden;
 }
 
 article,
@@ -278,6 +283,7 @@ textarea {
 details,
 menu {
 	display: block;
+	z-index:100;
 }
 
 summary {
@@ -435,6 +441,11 @@ h6 {
 	margin: 0 0 0.75em;
 	padding: 1.5em 0 0;
 }
+h3 {
+    font-family:ymtitle;
+	color:#1dbcad !important;
+	padding:30px;
+}
 
 h1:first-child,
 h2:first-child,
@@ -453,10 +464,11 @@ h1 {
 
 h2,
 .home.blog .entry-title {
-	color: #666;
+	color: #f17720 !important;
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-weight: 300;
+	font-family:ymtitle;
 }
 
 h3 {
@@ -1190,6 +1202,12 @@ a:active {
 	transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
 	transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
 }
+.site-footer {
+	background-color:black !important;
+}
+.site-footer div aside div{
+	background-color:black !important;
+}
 
 .entry-title a,
 .entry-meta a,
@@ -1320,6 +1338,7 @@ a:hover .nav-title,
 	font-size: 16px;
 	font-size: 1rem;
 	position: relative;
+	z-index:9999999999 !important;
 }
 
 .navigation-top .wrap {
@@ -1500,6 +1519,10 @@ a:hover .nav-title,
 	display: none;
 }
 
+.smallbannerimg {
+	width:100%;
+}
+
 /*--------------------------------------------------------------
 13.0 Layout
 --------------------------------------------------------------*/
@@ -1532,7 +1555,6 @@ body {
 .wrap {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 700px;
 	padding-left: 2em;
 	padding-right: 2em;
 }
@@ -1552,7 +1574,7 @@ body {
 }
 
 .site-header {
-	background-color: #fafafa;
+	background-color: white;
 	position: relative;
 }
 
@@ -1574,19 +1596,43 @@ body {
 
 .site-branding a:hover,
 .site-branding a:focus {
-	opacity: 0.7;
+	opacity: 0.9;
 }
-
+.brewinghighlight {
+	color:#f1ea2a;
+	background:none;
+	background-color:transparent;
+}
+.taglineym {
+	font-family:arial;
+	font-size:18px;
+	color:white;
+	text-align:center;
+}
 .site-title {
+	font-family:ymtitle;
+	text-align:center;
 	clear: none;
-	font-size: 24px;
-	font-size: 1.5rem;
+	font-size: 5em !important;
 	font-weight: 800;
-	line-height: 1.25;
-	letter-spacing: 0.08em;
+	line-height: 0.95;
+	letter-spacing: 0.15em;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
+	margin-top:50px;
+}
+.ymdivider {
+  width:110%;
+  top:85%;
+  left:-5%;
+  transform:rotate(3deg);
+  height:200px;
+  background-color:white !important;
+  border-top:20px solid #1dbcad;
+  position:absolute;
+  opacity:1;
+  z-index:99;
 }
 
 .site-title,
@@ -1614,23 +1660,42 @@ body.has-header-video .site-description {
 	color: #fff;
 	opacity: 0.8;
 }
+.wrapym {
+	width:100%;
+	position:fixed;
+	top:10%;
+
+}
+.wrapyminner {
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 
 .custom-logo-link {
-	display: inline-block;
 	padding-right: 1em;
 	vertical-align: middle;
-	width: auto;
+	width: 100%;
+}
+.navlogo {
+	width: 130px;
+    display: inline;
+    position: absolute;
+    left: -110px;
+	top:0px;
 }
 
 .custom-logo-link img {
-	display: inline-block;
-	max-height: 80px;
 	width: auto;
+	width:250px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block !important;
 }
 
 body.home.title-tagline-hidden.has-header-image .custom-logo-link img,
 body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
-	max-height: 200px;
 	max-width: 100%;
 }
 
@@ -1641,6 +1706,7 @@ body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
 
 body:not(.title-tagline-hidden) .site-branding-text {
 	display: inline-block;
+	width:100%;
 	vertical-align: middle;
 }
 
@@ -1815,6 +1881,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 .panel-content {
 	position: relative;
+	width:100%;
 }
 
 .panel-content .wrap {
@@ -1869,10 +1936,27 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .site-content-contain {
 	background-color: #fff;
 	position: relative;
+	z-index:999999;
 }
 
 .site-content {
-	padding: 2.5em 0 0;
+	padding: 1.5em 0 0;
+}
+
+.entry-content h2 {
+	color:#f17720;
+	font-family:ymtitle;
+	text-transform:uppercase;
+	font-size:44px;
+	letter-spacing:.0.3em;
+}
+.mc4wp-form-fields h2 {
+	color:#f17720;
+	font-family:ymtitle;
+	text-transform:uppercase;
+	font-size:44px;
+	letter-spacing:.0.3em;
+	margin-bottom:0px;
 }
 
 /*--------------------------------------------------------------
@@ -2028,6 +2112,44 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 	font-size: 0.8125rem;
 	width: 48%;
 }
+.entry-content-ym h2 {
+	text-align:center;
+	font-size:32px;
+	letter-spacing:0.1em;
+	color:orange !important;
+    font-family: ymtitle;
+}
+.entry-content-ym p {
+	margin-left:10%;
+	margin-right:10%;
+	text-align:justify;
+}
+.ymctabutton {
+	text-align:center;
+}
+.ymctabutton a button {
+	background-color:#f17720;
+	border-radius:30px;
+}
+
+.contactus {
+	background: url('/wp-content/uploads/2018/10/mattandhep.png');
+	height:300px;
+	width:100%;
+	background-repeat:none;
+	margin-top:1em;
+}
+.signupbutton {
+	background:#f17720 !important;
+	font-family:ymtitle;
+	letter-spacing:0.1em;
+	font-weight:bold;
+	font-size:22px !important;
+	padding-left:10px !important;
+	padding-right:10px !important;
+	padding-top:10px !important;
+	padding-bottom:5px !important;
+}
 
 /* Blog landing, search, archives */
 
@@ -2088,12 +2210,13 @@ body:not(.twentyseventeen-front-page) .entry-header {
 .archive.page-one-column:not(.has-sidebar) #primary {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 740px;
+	max-width: 900px;
 }
 
 .single-featured-image-header {
 	background-color: #fafafa;
 	border-bottom: 1px solid #eee;
+display:none;
 }
 
 .single-featured-image-header img {
@@ -2127,7 +2250,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 .entry-footer {
 	border-bottom: 1px solid #eee;
 	border-top: 1px solid #eee;
-	margin-top: 2em;
+	margin-top: 3em;
 	padding: 2em 0;
 }
 
@@ -2302,6 +2425,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .site-footer {
 	border-top: 1px solid #eee;
+	background-color:black;
+	color:white;
 }
 
 .site-footer .wrap {
@@ -2526,13 +2651,23 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 h2.widget-title {
-	color: #222;
-	font-size: 13px;
-	font-size: 0.8125rem;
+	color: white;
+	font-size: 28px !important;
+	margin-bottom:0px !important;
 	font-weight: 800;
-	letter-spacing: 0.1818em;
-	margin-bottom: 1.5em;
+	letter-spacing: 0.15em;
 	text-transform: uppercase;
+	font-family:ymtitle;
+	text-decoration:underline;
+}
+.textwidget p a {
+	color:white;
+	text-decoration:none;
+}
+
+.textwidget p a:hover {
+	color:white !important;
+	text-decoration:underline;
 }
 
 .widget-title a {
@@ -3446,7 +3581,6 @@ p > object:only-child {
 	.custom-logo-link img,
 	body.home.title-tagline-hidden.has-header-image .custom-logo-link img,
 	body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
-		max-width: 350px;
 	}
 
 	.title-tagline-hidden.home.has-header-image .custom-logo-link img,
@@ -3455,7 +3589,7 @@ p > object:only-child {
 	}
 
 	.site-title {
-		font-size: 36px;
+		font-size: 42px;
 		font-size: 2.25rem;
 	}
 
@@ -3494,7 +3628,6 @@ p > object:only-child {
 		right: 0;
 		top: 0;
 		width: 100%;
-		z-index: 7;
 	}
 
 	.admin-bar .site-navigation-fixed.navigation-top {
@@ -3715,7 +3848,6 @@ p > object:only-child {
 	.twentyseventeen-front-page.has-header-video .site-branding,
 	.home.blog.has-header-image .site-branding,
 	.home.blog.has-header-video .site-branding {
-		margin-bottom: 70px;
 	}
 
 	.twentyseventeen-front-page.has-header-image .custom-header-media,
@@ -4026,7 +4158,10 @@ p > object:only-child {
 		font-size: 14px;
 		font-size: 0.875rem;
 		line-height: 1.6;
-		margin-top: 3em;
+	}
+
+	.content-area {
+
 	}
 
 	.site-footer .widget-column.footer-widget-1 {
@@ -4323,5 +4458,95 @@ p > object:only-child {
 
 	.site-footer {
 		padding: 0;
+	}
+}
+.bitnami-corner-image {
+	display:none !important;
+
+}
+.bitnami-corner-image-div {
+	display:none !important;
+}
+
+.drawer-hamburger {
+	display:none;
+}
+
+@media only screen 
+and (max-device-width : 500px)  {
+	.ymdivider {
+		display:none;
+	}
+
+.smallbannerimg {
+	display:none;
+}
+	.site-title {
+		font-size:28px !important;
+		width:100%:
+		margin-top:5px !important;
+		padding-bottom:20px !important;
+	}
+	.taglineym {
+		display:none;
+	}
+	.custom-header {
+		width:100% !important;
+	}
+	.site-branding-text {
+		display:none;
+	}
+	.wrapym {
+		position:initial !important;
+		width:auto !important;
+
+	}
+	.contactus {
+		background: black !important;
+		padding:10px;
+		padding-bottom:20px;
+		height:110%;
+	}
+	.menu-toggle {
+		display:none !important;
+	}
+	.navlogo {
+		position:fixed;
+		top:0px;
+		left:25%;
+		width:50%;
+	}
+	.wrap {
+		margin-top:50px;
+	}
+	.masthead {
+		background:white !important;
+		z-index:99999 !important;
+		min-height:100px;
+		height:100px !important;
+		position:fixed;
+	}
+	.shiftnav-toggle-button {
+		display:block;
+	}
+		.navigation-top {
+			border:none;
+		}
+		.drawer-hamburger {
+			display:block;
+			position:fixed;
+			right:1px;
+		}
+		.drawer-nav {
+			display:block;
+		}
+	.drawer-nav {
+		z-index:9999999999 !important;
+	}
+	.drawer-overlay {
+		background:white;
+	}
+	.site-content-contain  {
+		z-index:1 !important;
 	}
 }

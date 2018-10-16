@@ -216,6 +216,32 @@ function twentyseventeen_setup() {
 }
 add_action( 'after_setup_theme', 'twentyseventeen_setup' );
 
+
+add_action( 'rest_api_init', 'create_api_tap_finder' );
+ 
+function create_api_tap_finder() {
+ 
+    register_rest_field( 'get', 'tap_finder', array(
+           'get_callback'    => 'get_tap_finder_for_api',
+           'schema'          => null,
+        )
+    );
+	register_rest_route('ymapi', '/tap_finder', array(
+    'methods' => 'GET',
+    'callback' => 'get_tap_finder_for_api',
+  ) );
+}
+create_api_tap_finder();
+ 
+function get_tap_finder_for_api( $object ) {
+	global $wpdb;
+	$results = $wpdb->get_results( "SELECT * FROM taps WHERE type=1", ARRAY_A);
+	header("Content-type:application/json"); 
+	header("Status: 200");
+	return json_encode($results);
+}
+
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -411,6 +437,7 @@ add_action( 'wp_head', 'twentyseventeen_colors_css_wrap' );
 function twentyseventeen_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
+add_action( 'wp_enqueue_scripts', 'wpmu_burger_menu_scripts' );
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
@@ -458,6 +485,12 @@ function twentyseventeen_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'twentyseventeen_scripts' );
+function wpmu_burger_menu_scripts() {
+	
+	wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/scripts/burger-menu-script.js', array( 'jquery' ) );
+ 
+}
+add_action( 'wp_enqueue_scripts', 'wpmu_burger_menu_scripts' );
 
 /**
  * Add custom image sizes attribute to enhance responsive image functionality
