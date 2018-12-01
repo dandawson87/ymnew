@@ -16,17 +16,50 @@ if ( is_active_sidebar( 'sidebar-2' ) ||
 ?>
 
 	<aside class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'twentyseventeen' ); ?>">
-		<?php
-		if ( is_active_sidebar( 'sidebar-2' ) ) { ?>
-			<div class="widget-column footer-widget-1">
-				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+		<div class="row">
+			<div class="col-md-4">
+				<h3 class='footerunderline'> MENU </h3>
+				<div class="menufooterlinks">
+					<a class='footermenulink' href='/' style="font-family: 'Roboto Mono', monospace;">Home</a><br>
+					<a class='footermenulink' href='/our-story' style="font-family: 'Roboto Mono', monospace;">Our Yarn</a><br>
+					<a class='footermenulink' href='/our-mates' style="font-family: 'Roboto Mono', monospace;">Our Mates</a><br>
+					<a class='footermenulink' href='/blog' style="font-family: 'Roboto Mono', monospace;">Livin'</a><br>
+					<a class='footermenulink' href='/larry-locator/' style="font-family: 'Roboto Mono', monospace;">Beer Locator</a><br>
+					<a class='footermenulink' href='/contact/' style="font-family: 'Roboto Mono', monospace;">Contact</a><br>
+				</div>	
 			</div>
-		<?php }
-		if ( is_active_sidebar( 'sidebar-3' ) ) { ?>
-			<div class="widget-column footer-widget-2">
-				<?php dynamic_sidebar( 'sidebar-3' ); ?>
+			<div class="col-md-4" style='color:white !important;'>
+				<h3 class='footerunderline'> FIND US </h3>
+				<div class"menufooterlinks">
+					<h5 style="color:white; font-family: 'Roboto Mono', monospace;">ADDRESS</h5>
+					<p><a href='https://goo.gl/maps/kXG5geb1icp' target='_blank' style="color:white;font-family: 'Roboto Mono', monospace;">30 Allen St, Moffat Beach</a></p>
+				
+					<h5 style="color:white; font-family: 'Roboto Mono', monospace;">PHONE</h5>
+					<p style="color:white; font-family: 'Roboto Mono', monospace;"><a href'tel:0753294713'> 07 5329 4713 </a></p>
+
+					<h5 style="color:white; font-family: 'Roboto Mono', monospace;">HOURS</h5>
+					<p style="color:white; font-family: 'Roboto Mono', monospace;">Thursday, Friday and Saturday from 3PM</p>
+		
+					<h5 style="color:white; font-family: 'Roboto Mono', monospace;">FIND OUR BEER</h5>
+					<p><a style="color:white; font-family: 'Roboto Mono', monospace;" href='/larry-locator/'>Beer Locator</a></p>
+				</div>
 			</div>
-		<?php } ?>
+		
+			<div class="col-md-4">
+				<h3 class='footerunderline'> STOCK OUR BEER </h3>
+				<p><a style="color:white; font-family: 'Roboto Mono', monospace;" href='mailto:info@yourmatesbrewing.com'>info@yourmatesbrewing.com</a></p>
+			
+				<h3 class='footerunderline'> DRINK RESPONSIBLY </h3>
+				<p style="font-family: 'Roboto Mono', monospace;">Your Mates Brewing Company supports the safe and responsible consumption of alcohol. Look after yourselves out there!</p>
+	<br><br>	
+				<div class="row">
+					<div class="col-md-3"><a href="/"><img src='/wp-content/uploads/2018/10/cropped-Your-Mates-Brewing-Company.png' style='width:75px;'></img></a></div>
+					<div class="col-md-3"><a href="https://www.facebook.com/yourmatesbrewing/" target="_blank"><img src='/wp-content/uploads/2018/11/fb.png' style='width:75px;'></img></a></div>
+					<div class="col-md-3"><a href="https://www.youtube.com/channel/UCg9qD8LCbtW5ikQYNneRfUw"><img src='/wp-content/uploads/2018/11/youtube.png' style='width:75px;'></img></a></div>
+					<div class="col-md-3"><a href="https://www.instagram.com/yourmatesbrewing"><img src='/wp-content/uploads/2018/11/instagram.png' style='width:75px;'></img></a></div>
+				</div>
+			</div>
+		</div>
 	</aside><!-- .widget-area -->
 
 <?php endif; ?>

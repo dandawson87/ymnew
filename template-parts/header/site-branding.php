@@ -15,12 +15,6 @@ if(is_front_page()) {
 	<div class="wrapyminner">
 		<?php the_custom_logo(); ?>
 		<div class="site-branding-text">
-			<?php if ( is_front_page() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Brewing<span class='brewinghighlight'> Good Times</span></a></h1>
-				<p class='taglineym'>Your Mates Brewing Company | Sunshine Coast</p>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php endif; ?>
 
 			<?php
 			$description = get_bloginfo( 'description', 'display' );
@@ -37,6 +31,16 @@ if(is_front_page()) {
 	</div><!-- .inner -->
 	</div><!-- .wrap -->
 </div><!-- .site-branding -->
+			<?php if ( is_front_page() ) : ?>
+	<div class="font-page-text">
+				<h1 class="site-title"></h1>
+				<p class='taglineym'>BREWING GOOD TIMES.</p>
+				<a href='#content'><button style='color:white; background:none; border:2px solid white; border-radius:20px;
+												 padding:10px; position:relative; text-align:center; margin-left:auto; margin-right:auto; display:block;' class='menu-scroll-down'>Scroll for more</button></a>
+			<?php else : ?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<?php endif; ?>
+	</div> <!-- Endd front page text -->
 <div class="ymdivider"></div>
 <?php } else { 
 ?>

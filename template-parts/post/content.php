@@ -14,9 +14,6 @@
 #masthead {
 	padding-top:20px !important;
 }
-#page {
-	margin-top:50px !important;
-}	
 #content {
 	padding-top:0px !important;
 	text-align:justify !important;
@@ -50,7 +47,7 @@
 		};
 
 		if ( is_single() ) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h4 class="entry-title">', '</h4>' );
 		} elseif ( is_front_page() && is_home() ) {
 			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 		} else {

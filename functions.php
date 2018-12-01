@@ -214,11 +214,30 @@ function twentyseventeen_setup() {
 
 	add_theme_support( 'starter-content', $starter_content );
 }
+
 add_action( 'after_setup_theme', 'twentyseventeen_setup' );
 
 
 add_action( 'rest_api_init', 'create_api_tap_finder' );
+if(function_exists('add_db_table_editor')){
+	add_db_table_editor(array(
+		'title'=>'TapEditor',
+		'table'=>'taps',
+		'id_column'=>'id',
+		'sql'=>'SELECT * FROM taps ORDER BY id ASC'
+	));
+}
+add_action( 'wp_enqueue_scripts', 'wsis_dequeue_stylesandscripts_select2', 100 );
  
+function wsis_dequeue_stylesandscripts_select2() {
+    if ( class_exists( 'woocommerce' ) ) {
+        wp_dequeue_style( 'selectWoo' );
+        wp_deregister_style( 'selectWoo' );
+ 
+        wp_dequeue_script( 'selectWoo');
+        wp_deregister_script('selectWoo');
+    } 
+}  
 function create_api_tap_finder() {
  
     register_rest_field( 'get', 'tap_finder', array(
@@ -240,6 +259,7 @@ function get_tap_finder_for_api( $object ) {
 	header("Status: 200");
 	return json_encode($results);
 }
+
 
 
 /**
@@ -280,6 +300,15 @@ function twentyseventeen_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'twentyseventeen_content_width', $content_width );
 }
 add_action( 'template_redirect', 'twentyseventeen_content_width', 0 );
+
+// remove product description from single product pages	
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );	
+add_filter( 'woocommerce_product_tabs', 'wc_remove_description_tab', 11, 1 );	
+function wc_remove_description_tab( $tabs ) {	    
+	if ( isset( $tabs['description'] ) ) {	        
+		unset( $tabs['description'] );	    
+	}	
+}
 
 /**
  * Register custom fonts.
@@ -439,8 +468,9 @@ function twentyseventeen_scripts() {
 	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
 add_action( 'wp_enqueue_scripts', 'wpmu_burger_menu_scripts' );
 
+
 	// Theme stylesheet.
-	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() . "?v=".time() );
 
 	// Load the dark colorscheme.
 	if ( 'dark' === get_theme_mod( 'colorscheme', 'light' ) || is_customize_preview() ) {
@@ -593,6 +623,7 @@ function twentyseventeen_widget_tag_cloud_args( $args ) {
 }
 add_filter( 'widget_tag_cloud_args', 'twentyseventeen_widget_tag_cloud_args' );
 
+
 /**
  * Implement the Custom Header feature.
  */
@@ -617,3 +648,4 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+

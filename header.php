@@ -16,8 +16,19 @@
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 <!-- drawer.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127978287-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127978287-1');
+</script>
 <!-- script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8Rlk5ORfVQ4vyTpF0sDdhn1SQNidd0o&callback=initMap"></script-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR8Rlk5ORfVQ4vyTpF0sDdhn1SQNidd0o"></script>
 <!-- jquery & iScroll -->
@@ -27,14 +38,59 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <?php wp_head(); ?>
+<script>
+		window.addEventListener('scroll', function(e) {
+		  if ($(window).scrollTop() > 489) {
+				$("#navtop").addClass("fix-search");
+		  } else {
+				$("#navtop").removeClass("fix-search");
+		  }
+		  
+		});
+
+	function gotofacebook() {
+		window.location.href = "https://www.facebook.com/yourmatesbrewing/";	
+	}
+
+	function closemodal() {
+		document.cookie ='ymimeighteen=yes';
+		$("#ageVerify").hide();
+	}
+    var nameEQ = "ymimeighteen" + "=";
+    var ca = document.cookie.split(';');
+	var iseighteen = false;
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0)  {
+			var iseighteen = true;
+
+		}
+    }
+</script>
 </head>
+<!-- Begin Modal -->
+<!-- The Modal -->
+<div id="ageVerify" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content verifymodal">
+		<div class="ageverifycontent">
+			<p>This website contains references to Alcohol. Are you over 18? </p>
+			<button onclick='closemodal()'>Yes</button>
+			<button onclick='gotofacebook()'>No</button>
+		</div>
+  </div>
+</div>
+<!-- End Modal -->
 <body id='thebody' <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
+	<?php if(is_front_page()) { ?>
 	<header id="masthead" class="site-header" role="banner">
+	<?php } ?>
 	<?php
 		$menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
 												   // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);
@@ -62,7 +118,7 @@
 		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
 
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
-			<div class="navigation-top">
+			<div id='navtop' class="navigation-top">
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 				</div><!-- .wrap -->

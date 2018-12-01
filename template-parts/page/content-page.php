@@ -15,9 +15,6 @@
 #masthead {
 	padding-top:20px !important;
 }
-#page {
-	margin-top:50px !important;
-}	
 #content {
 	padding-top:0px !important;
 	text-align:justify !important;

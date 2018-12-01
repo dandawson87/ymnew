@@ -17,9 +17,6 @@
 .title {
 	padding:0px !important;
 }
-#thebody {
-	margin-top:100px;
-}
 .search {
 	width:100%;
 }
@@ -66,7 +63,7 @@ input:focus {
 <div class="wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-	<h2 style='text-align:center; margin-left:auto; margin-right:auto;'>Find Your Closest Watering Hole</h2>
+	<h1 style='text-align:center; margin-left:auto; margin-right:auto;'>Find Your Closest Watering Hole</h1>
 	<div class="row" style='max-width:1200px; margin-left:auto; margin-right:auto;'>
 		<div class="col-md-4">
 				<div id="venues">
@@ -100,11 +97,32 @@ input:focus {
 		}
 		function showPosition(position) {
 			var center = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+			var suburbname = codeLatLng(position.coords.latitude, position.coords.longitude);
+			console.log(suburbname);
 			map.panTo(center);
+			//Put Home Icon
+				 	var icon = {
+						url: 'https://yourmatesbrewing.com/wp-content/uploads/2018/11/youarehere.png',
+						scaledSize: new google.maps.Size(70, 100), // scaled size
+						origin: new google.maps.Point(0,0), // origin
+						anchor: new google.maps.Point(0, 50) // anchor
+					};
+
+					var marker  = new google.maps.Marker({
+						position: {lat:	parseFloat(position.coords.latitude), lng: parseFloat(position.coords.longitude)},
+						title: "You Are Here",
+						map: map,
+						icon: icon,
+					});
+					var infowindow = new google.maps.InfoWindow({
+					    content: "<h2>You Are Here</h2>"
+					  });
+					infoArray[i] = infowindow;
+			
 		}
 		function loadMap() {
 			var request = jQuery.ajax({
-				url: "http://35.197.164.85/wp-json/ymapi/tap_finder", 
+				url: "https://yourmatesbrewing.com/wp-json/ymapi/tap_finder", 
 				type: "GET",
 			});
 			request.done(function( data )  {
@@ -116,7 +134,7 @@ input:focus {
 				};
 				for(var i = 0; i < data.length; i++) {
 				 	var icon = {
-						url: 'http://35.197.164.85/wp-content/uploads/2018/10/larry-128.bmp',
+						url: 'https://yourmatesbrewing.com/wp-content/uploads/2018/10/larry-128.bmp',
 						scaledSize: new google.maps.Size(50, 50), // scaled size
 						origin: new google.maps.Point(0,0), // origin
 						anchor: new google.maps.Point(0, 50) // anchor
@@ -140,7 +158,41 @@ input:focus {
 				var list = new List('venues', options, data);
 			});
 		}
-		google.maps.event.addDomListener(window, 'load', initialize);
+		function codeLatLng(lat, lng) {
+
+			var latlng = new google.maps.LatLng(lat, lng);
+			var geocoder = new google.maps.Geocoder;
+			geocoder.geocode({'latLng': latlng}, function(results, status) {
+			  if (status == google.maps.GeocoderStatus.OK) {
+				if (results[1]) {
+				 //formatted address
+				 $(".search").val(results[0].formatted_address)
+				//find country name
+					 for (var i=0; i<results[0].address_components.length; i++) {
+							for (var b=0;b<results[0].address_components[i].types.length;b++) {
+
+							//there are different types that might hold a city admin_area_lvl_1 usually does in come cases looking for sublocality type will be more appropriate
+								if (results[0].address_components[i].types[b] == "administrative_area_level_1") {
+									//this is the object you are looking for
+									city= results[0].address_components[i];
+									break;
+								}
+							}
+				}
+				//city data
+				return city.short_name + " " + city.long_name;
+
+				} else {
+					console.log("error");
+					return "";
+				}
+			  } else {
+					console.log("Geocoder failed due to: " + status);
+					return "";
+			  }
+			});
+	}
+google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 	</main>
 	</div><!-- #primary -->

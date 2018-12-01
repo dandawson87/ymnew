@@ -286,6 +286,11 @@ menu {
 	z-index:100;
 }
 
+sub-menu {
+	background-color:#f1ea2a !important;
+	color:black !important;
+}
+
 summary {
 	display: list-item;
 }
@@ -327,7 +332,7 @@ template {
 	color: #21759b;
 	display: block;
 	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 0.75em;
 	font-weight: 700;
 	height: auto;
 	left: 5px;
@@ -442,11 +447,66 @@ h6 {
 	padding: 1.5em 0 0;
 }
 h3 {
+	font-size:2em;
     font-family:ymtitle;
 	color:#1dbcad !important;
 	padding:30px;
+	font-weight:400;
 }
 
+.video-container {
+	border: 2px solid black;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	width: 400px;
+	height: 300px;
+}	
+.icon {
+	color:white !important;
+}
+
+.wpspw-readmorebtn {
+	background-color:#f17720;
+	border-radius:30px;
+	padding-top:3px;
+	padding-bottom:3px;
+	height:35px;
+	font-weight:300;
+	color:white !important;
+	padding:10px;
+	text-transform:uppercase;
+	width:110px;
+	text-align:center;
+}
+.wpswp-post-tags {
+	text-align:center;
+}
+.wpswp-post-tags a {
+}
+.wpspw-post-title {
+	text-align:left !important;
+	color:#f17720 !important;
+	font-size:28px !important;
+
+}
+.wpspw-post-title a{
+	color:#f17720 !important;
+	font-size:34px !important;
+}
+.wpspw-post-categories {
+	display:none !important;
+}
+h4 {
+	text-transform: uppercase;
+    font-size: 2em !important;
+    text-decoration: underline;
+}
+#panel2 {
+	background-color:#f6f6f6;
+}
 h1:first-child,
 h2:first-child,
 h3:first-child,
@@ -473,16 +533,14 @@ h2,
 
 h3 {
 	color: #333;
-	font-size: 18px;
-	font-size: 1.125rem;
+	font-size: 2em;
+	letter-spacing:0.1em;
 	font-weight: 300;
+	padding:5px;
 }
-
-h4 {
-	color: #333;
-	font-size: 16px;
-	font-size: 1rem;
-	font-weight: 800;
+.ymunderline {
+	background-color: #1dbcad !important;
+	height:6px;
 }
 
 h5 {
@@ -1202,12 +1260,6 @@ a:active {
 	transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
 	transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
 }
-.site-footer {
-	background-color:black !important;
-}
-.site-footer div aside div{
-	background-color:black !important;
-}
 
 .entry-title a,
 .entry-meta a,
@@ -1308,6 +1360,19 @@ a:hover .nav-title,
 	color: #222;
 }
 
+#navtop {
+	background-color: #00c8b8;
+	border-bottom:1px solid #00c8b8;
+	border-top:1px solid #00c8b8;
+}
+#top-menu li a {
+	color:white;
+}
+
+.menu-scroll-down {
+	color:white;
+}
+
 /*--------------------------------------------------------------
 11.0 Featured Image Hover
 --------------------------------------------------------------*/
@@ -1335,10 +1400,14 @@ a:hover .nav-title,
 	background: #fff;
 	border-bottom: 1px solid #eee;
 	border-top: 1px solid #eee;
-	font-size: 16px;
-	font-size: 1rem;
-	position: relative;
+	font-size: 1em;
+	position: relative !important;
 	z-index:9999999999 !important;
+}
+.fix-search {
+    position: fixed !important;
+    top: 0px !important;
+    height: 80px !important;
 }
 
 .navigation-top .wrap {
@@ -1369,6 +1438,8 @@ a:hover .nav-title,
 	margin: 0;
 	padding: 0 1.5em;
 	text-align: left;
+	font-size:1.2em;
+	text-transform:uppercase;
 }
 
 /* Hide the menu on small screens when JavaScript is available.
@@ -1579,6 +1650,19 @@ body {
 }
 
 /* Site branding */
+.font-page-text {
+	width: 100%;
+    position: absolute;
+    z-index: 9999999999999999;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+#brewinggoodtimesvid {
+	width:100%;
+	height:100%;
+}
 
 .site-branding {
 	padding: 1em 0;
@@ -1599,27 +1683,28 @@ body {
 	opacity: 0.9;
 }
 .brewinghighlight {
-	color:#f1ea2a;
+	color:white;
 	background:none;
 	background-color:transparent;
 }
 .taglineym {
-	font-family:arial;
-	font-size:18px;
+	font-family:'Roboto Mono';
+	font-size:48px;
 	color:white;
 	text-align:center;
+	text-decoration:underline;
 }
 .site-title {
-	font-family:ymtitle;
 	text-align:center;
 	clear: none;
-	font-size: 5em !important;
-	font-weight: 800;
-	line-height: 0.95;
-	letter-spacing: 0.15em;
+	font-size: 3em !important;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	letter-spacing: 0.01em;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
+	text-decoration:underline;
 	margin-top:50px;
 }
 .ymdivider {
@@ -1661,15 +1746,26 @@ body.has-header-video .site-description {
 	opacity: 0.8;
 }
 .wrapym {
-	width:100%;
+	width:50%;
 	position:fixed;
 	top:10%;
 
 }
 .wrapyminner {
-	width:80%;
-	margin-left:auto;
-	margin-right:auto;
+	width: 130px;
+    display: inline;
+    position: absolute;
+    left: 7%;
+    top: 0px;
+	margin-top:-50px;
+}
+.html5-video-container {
+	backrgound-color:white !important;
+	backrgound:white !important;
+
+}
+#wp-custom-header-video {
+	margin-top:-5%;
 }
 
 
@@ -1682,10 +1778,17 @@ body.has-header-video .site-description {
 	width: 130px;
     display: inline;
     position: absolute;
-    left: -110px;
+    left: 7%;
 	top:0px;
 }
 
+.navlogofront {
+	width: 130px;
+    display: inline;
+    position: absolute;
+    left: -100px;
+	top:0px;
+}
 .custom-logo-link img {
 	width: auto;
 	width:250px;
@@ -2116,7 +2219,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 	text-align:center;
 	font-size:32px;
 	letter-spacing:0.1em;
-	color:orange !important;
+	color:#f17720 !important;
     font-family: ymtitle;
 }
 .entry-content-ym p {
@@ -2125,19 +2228,33 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 	text-align:justify;
 }
 .ymctabutton {
-	text-align:center;
+	text-align:left;
+	
 }
 .ymctabutton a button {
 	background-color:#f17720;
 	border-radius:30px;
+	padding-top:3px;
+	padding-bottom:3px;
+	height:40px;
+	text-transform:uppercase;
+	font-weight:300;
 }
 
 .contactus {
-	background: url('/wp-content/uploads/2018/10/mattandhep.png');
-	height:300px;
+	background: url('/wp-content/uploads/2018/11/joinusonourjourney.jpg');
+	height:400px;
+	background-position:top;
 	width:100%;
-	background-repeat:none;
 	margin-top:1em;
+}
+.joinusbox {
+	margin-top:10px;
+	border-radius:20px;
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:20px;
+	
+
 }
 .signupbutton {
 	background:#f17720 !important;
@@ -2425,7 +2542,7 @@ display:none;
 
 .site-footer {
 	border-top: 1px solid #eee;
-	background-color:black;
+	background-color:#151515;
 	color:white;
 }
 
@@ -2652,13 +2769,18 @@ display:none;
 
 h2.widget-title {
 	color: white;
-	font-size: 28px !important;
+	font-size: 18px !important;
 	margin-bottom:0px !important;
 	font-weight: 800;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	font-family:ymtitle;
-	text-decoration:underline;
+}
+.logoimagefooter {
+	width:180px;
+}
+.textwidget p strong{
+	letter-spacing:0.18em;	
 }
 .textwidget p a {
 	color:white;
@@ -2975,6 +3097,13 @@ img.alignright {
 	margin-top: 0;
 	padding: 0;
 }
+.entry-content {
+	font-family: 'Roboto Mono', monospace;
+}
+
+.entry-content-ym {
+	font-family: 'Roboto Mono', monospace;
+}
 
 /* Make sure embeds and iframes fit their containers. */
 
@@ -2983,6 +3112,9 @@ iframe,
 object {
 	margin-bottom: 1.5em;
 	max-width: 100%;
+}
+iframe {
+	margin-bototm:0px !important;
 }
 
 /* Remove bottom on embeds that wrapped in paragraphs via wpautop. */
@@ -3379,7 +3511,7 @@ p > object:only-child {
 
 	h3 {
 		font-size: 22px;
-		font-size: 1.375rem;
+		font-size: 1.8rem;
 	}
 
 	h4 {
@@ -3428,7 +3560,7 @@ p > object:only-child {
 	}
 
 	.page-one-column .panel-content .wrap {
-		max-width: 740px;
+		max-width: 1000px;
 	}
 
 	.panel-content .entry-header {
@@ -3614,7 +3746,7 @@ p > object:only-child {
 	.navigation-top .wrap {
 		max-width: 1000px;
 		/* The font size is 14px here and we need 50px padding in ems */
-		padding: 0.75em 3.4166666666667em;
+		padding: 0.5em 2.4166666666667em;
 	}
 
 	.navigation-top nav {
@@ -3676,7 +3808,7 @@ p > object:only-child {
 	}
 
 	.main-navigation ul ul {
-		background: #fff;
+		background: #f17720 !important;
 		border: 1px solid #bbb;
 		left: -999em;
 		padding: 0;
@@ -4474,9 +4606,54 @@ p > object:only-child {
 
 @media only screen 
 and (max-device-width : 500px)  {
+.font-page-text {
+	display:none;
+}
 	.ymdivider {
 		display:none;
 	}
+#ageverify {
+	z-index:9999999999;
+	width:100%;
+	height:100%:
+	max-width:450px;
+}
+
+.verifymodal {
+	background-color:rgb(0,0,0,0.75);
+	max-width:450px;
+}
+#wp-custom-header img {
+	max-width:500px;
+}
+.row {
+	max-width:500px !important;
+}
+.wp-custom-header {
+	max-width:500px !important;
+	width:500px !important;
+}
+.frontbeerfindercontainer{
+	max-width:500px !important;
+	width:100% !important;
+}
+#map {
+	max-width:500px;
+	display:none;
+}
+#page {
+	width:100%;
+	max-width:500px;
+}
+.wrapyminner {
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+
+.navlogofront {
+	display:none;
+}
 
 .smallbannerimg {
 	display:none;
@@ -4502,7 +4679,6 @@ and (max-device-width : 500px)  {
 
 	}
 	.contactus {
-		background: black !important;
 		padding:10px;
 		padding-bottom:20px;
 		height:110%;
@@ -4511,11 +4687,16 @@ and (max-device-width : 500px)  {
 		display:none !important;
 	}
 	.navlogo {
-		position:fixed;
+		position:absolute;
 		top:0px;
-		left:25%;
-		width:50%;
+		left:35%;
+		width:30%;
 	}
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
+		z-index:99999999999;
+		background-color:#f17720 !important;
+
+}
 	.wrap {
 		margin-top:50px;
 	}
@@ -4541,7 +4722,7 @@ and (max-device-width : 500px)  {
 			display:block;
 		}
 	.drawer-nav {
-		z-index:9999999999 !important;
+		z-index:9999999999999999 !important;
 	}
 	.drawer-overlay {
 		background:white;
@@ -4549,4 +4730,175 @@ and (max-device-width : 500px)  {
 	.site-content-contain  {
 		z-index:1 !important;
 	}
+	#brewinggoodtimesvid {
+		width:100%;
+	}
+	.vidcontainer {
+		width:100%;
+	}
+		.video-container {
+			width:100%;
+		}
+}
+
+#AVenterLink {
+	color: white !important;
+	background-color: #f17720 !important;
+}
+
+.ctaimages {
+	width:100%;
+	max-height:500px;
+	height:500px;
+	padding:none;
+	margin:none;
+}
+
+.cover {
+  background-size:cover;
+}
+
+.ctaactions {
+	color:white !important;
+	position:relative;
+	padding:20%;
+	padding-top:40% !important;
+	text-align:center;
+	font-size:3em;
+}
+
+.kitbg {
+	background-image:linear-gradient(rgba(247, 174, 29, 0.7),rgba(247, 174, 29, 0.7)), url('/wp-content/uploads/2018/10/Shirt_02.jpg');
+  -webkit-transition: background-image 2s ease-in-out;
+  -moz-transition: background-image 2s ease-in-out;
+  -o-transition: background-image 2s ease-in-out;
+  transition: background-image 2s ease-in-out;
+}
+.kitbg:hover {
+	background-image:url('/wp-content/uploads/2018/10/Shirt_02.jpg');
+}
+
+.beerbg {
+	background-image:linear-gradient(rgba(241, 120, 33, 0.7),rgba(241, 120, 33, 0.7)), url('/wp-content/uploads/2018/10/buy-beer.png');
+	transition: 0.5s;
+}
+
+.beerbg:hover {
+	background-image:url('/wp-content/uploads/2018/10/buy-beer.png');
+}
+
+.salesbg {
+	background-image:linear-gradient(rgba(223, 31, 53, 0.7),rgba(223, 31, 53, 0.7)), url('/wp-content/uploads/2018/10/ymshop.png');
+	transition: 0.5s;
+}
+.salesbg:hover {
+	background-image:url('/wp-content/uploads/2018/10/ymshop.png');
+}
+.menufooterlinks p a {
+	color:white !important;
+	text-decoration:none !important;
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+.menufooterlinks a {
+	color:white;
+	text-decoration:none;
+	font-family: 'Roboto Mono', monospace;
+}
+.menufooterlinks p {
+	color:white;
+	text-decoration:none;
+	font-family: 'Roboto Mono', monospace;
+}
+.menufooterlinks h5 {
+	color:white !important;
+	text-decoration:none;
+	font-family: 'Roboto Mono', monospace;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.footerunderline {
+	text-decoration: none;
+    border-bottom: 5px solid #1dbcad;
+	display:inline-block;	
+}
+.footermenulink {
+	color:white;
+	margin-bottom:5px;
+}
+.footermenulink:hover {
+	color:#d01c30;	
+}
+
+#ageverify {
+	z-index:9999999999;
+	width:100%;
+	height:100%:
+}
+
+.verifymodal {
+	background-color:rgb(0,0,0,0.75);
+}
+
+.ageverifycontent {
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    text-align: center;
+    font-family: "roboto mono";
+	padding:30px;
+	background-color:black;
+	color:white;
+}
+.ageverifycontent button {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-family: "roboto monospace";
+    height: 60px;
+    width: 150px;
+	font-size:16px;
+}
+
+.price {
+	color:#5bc2ad !important;
+}
+
+.stock {
+	color:#5bc2ad !important;
+}
+.single_add_to_cart_button {
+	background-color:#f17821 !important;
+}
+
+.woocommerce-billing-fields {
+	display:grid !important;
+}
+
+.woocommerce-input-wrapper {
+	width:100%;
+}
+
+.col-1 {
+	display:contents;
+}
+.col-2 {
+	display:contents;
+}
+
+#billing_postcode_field {
+	width:100% !important;
+}
+#billing_phone_field {
+	width:100% !important;
+}
+
+.checkout-button {
+	background-color:#f17821 !important;
+}
+
+.cart_totals {
+	width:100% !important;
+
 }

@@ -24,5 +24,6 @@ $( document ).ready(function() {
 		$('.drawer').on('drawer.closed', function(){
 			$(".navlogo").show();
 		}); 
+
 });
 
