@@ -238,6 +238,18 @@ function wsis_dequeue_stylesandscripts_select2() {
         wp_deregister_script('selectWoo');
     } 
 }  
+function create_api_tap_finder_ios() {
+ 
+    register_rest_field( 'get', 'tap_finder', array(
+           'get_callback'    => 'get_tap_finder_for_api_ios',
+           'schema'          => null,
+        )
+    );
+	register_rest_route('ymapi', '/tap_finder_ios', array(
+    'methods' => 'GET',
+    'callback' => 'get_tap_finder_for_api_ios',
+  ) );
+}
 function create_api_tap_finder() {
  
     register_rest_field( 'get', 'tap_finder', array(
@@ -251,6 +263,7 @@ function create_api_tap_finder() {
   ) );
 }
 create_api_tap_finder();
+create_api_tap_finder_ios();
  
 function get_tap_finder_for_api( $object ) {
 	global $wpdb;
@@ -260,6 +273,15 @@ function get_tap_finder_for_api( $object ) {
 	return json_encode($results);
 }
 
+function get_tap_finder_for_api_ios( $object ) {
+	global $wpdb;
+	$results = $wpdb->get_results( "SELECT * FROM taps WHERE type=1");
+	header("Content-type:application/json"); 
+	header("Status: 200");
+	$x = array();
+	$x['taps'] = $results;
+	return $results;
+}
 
 
 /**
