@@ -32,13 +32,21 @@ if ( is_active_sidebar( 'sidebar-2' ) ||
 				<h3 class='footerunderline'> FIND US </h3>
 				<div class"menufooterlinks">
 					<h5 style="color:white; font-family: 'Roboto Mono', monospace;">ADDRESS</h5>
-					<p><a href='https://goo.gl/maps/kXG5geb1icp' target='_blank' style="color:white;font-family: 'Roboto Mono', monospace;">30 Allen St, Moffat Beach</a></p>
+					<p><a href='https://goo.gl/maps/KnZfVfNerHk' target='_blank' style="color:white;font-family: 'Roboto Mono', monospace;">41 Technology Drive, Warana</a></p>
 				
 					<h5 style="color:white; font-family: 'Roboto Mono', monospace;">PHONE</h5>
-					<p style="color:white; font-family: 'Roboto Mono', monospace;"><a href'tel:0753294713'> 07 5329 4713 </a></p>
+					<p style="color:white; font-family: 'Roboto Mono', monospace;"><a style='color:white !important;' href='tel:0753294733'>07 5329 4733</a></p>
 
 					<h5 style="color:white; font-family: 'Roboto Mono', monospace;">HOURS</h5>
-					<p style="color:white; font-family: 'Roboto Mono', monospace;">Thursday, Friday and Saturday from 3PM</p>
+					<p style="color:white; font-family: 'Roboto Mono', monospace;">
+<ul>
+		<li>Wednesday: 11am - 9pm</li>
+		<li>Thursday: 11am - 9pm</li>
+		<li>Friday: 11am - 11pm</li>
+		<li>Saturday: 11am - 11pm</li>
+		<li>Sunday: 11am - 9pm</li>
+</ul>
+					</p>
 		
 					<h5 style="color:white; font-family: 'Roboto Mono', monospace;">FIND OUR BEER</h5>
 					<p><a style="color:white; font-family: 'Roboto Mono', monospace;" href='/larry-locator/'>Beer Locator</a></p>

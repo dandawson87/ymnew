@@ -38,8 +38,9 @@
 	</div>
 </div>
 <!-- start beer finder -->
+<hr>
 <div class='frontbeerfindercontainer'>
-<h4 style='text-align:center; margin-left:auto; margin-right:auto;'>Find Your Closest Watering Hole</h4>
+<h4 style="text-align:center; margin-left:auto; margin-right:auto; margin-top:20px; padding-top:20px; font-weight:bolder;">Find Your Closest Watering Hole</h4>
 	<div class="row" style='max-width:1200px; margin-left:auto; margin-right:auto;'>
 <style>
 #map {
@@ -97,7 +98,7 @@ input:focus {
 				  <ul class="list">
 					<li>
 					  <h3 class="title">Your Mates Brewing Company</h3>
-					  <p class="address">30 Allen St, Moffat Beach</p>
+					  <p class="address">41 Technology Drive, Warana</p>
 					</li>
 				  </ul>
 
@@ -197,6 +198,7 @@ input:focus {
 </div>
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
+</main>
 <script>
 if(!iseighteen) {
 		$("#ageVerify").css({"display": "inline-flex"});

@@ -28,7 +28,12 @@
 ?>
 	</div></div>
 <?php
-		the_post_thumbnail( 'full', ['class' => 'smallbannerimg']);  
+if ( has_post_thumbnail() ) {
+    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+	?>
+	<div class="backgroundimage" style="background-image:url('<?php echo $large_image_url[0]; ?>');"></div>
+<?php
+}
 ?>
 		<div id="content" class="site-content">
 			<div class="wrap">

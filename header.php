@@ -22,6 +22,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127978287-1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -85,8 +86,12 @@
 
 	function closemodal() {
 		document.cookie ='ymimeighteen=yes';
+		$("#navtop").show();
 		$("#ageVerify").hide();
+		$("#verifymodal").hide();
 	}
+	var iseighteen = false;
+$(document).ready(function() {
     var nameEQ = "ymimeighteen" + "=";
     var ca = document.cookie.split(';');
 	var iseighteen = false;
@@ -95,25 +100,85 @@
         while (c.charAt(0)==' ') c = c.substring(1,c.length);
         if (c.indexOf(nameEQ) == 0)  {
 			var iseighteen = true;
-
+			closemodal();
 		}
     }
+
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
+  });
+
+  // Toggle button
+  document.querySelector('.toggle-button').addEventListener('click', function() {
+    slideout.toggle();
+  });
+});
 </script>
-</head>
 <!-- Begin Modal -->
 <!-- The Modal -->
 <div id="ageVerify" class="modal">
   <!-- Modal content -->
   <div class="modal-content verifymodal">
 		<div class="ageverifycontent">
-			<p>This website contains references to Alcohol. Are you over 18? </p>
-			<button onclick='closemodal()'>Yes</button>
-			<button onclick='gotofacebook()'>No</button>
+			<img src='https://yourmatesbrewing.com/wp-content/uploads/2018/10/cropped-Your-Mates-Brewing-Company.png'/>
+			<br>
+			<br>
+			<div style="font-family:'Roboto Mono'; font-size:18px; height:120px;"><p>Are you old enough to shout your mates a beer?</p></div>
+			<button style="font-family:'Roboto Mono', monospace" onclick='closemodal()'>Yes</button>
+			<button style="font-family:'Roboto Mono', monospace" onclick='gotofacebook()'>No</button>
+<br><br>
+			<p style="font-family:'Roboto Mono'; font-size:12px;">You must be of legal drinking age or older to enter this site.</p>
 		</div>
   </div>
 </div>
+</head>
 <!-- End Modal -->
 <body id='thebody' <?php body_class(); ?>>
+	<nav id="menu" class="menu slideout-menu slideout-menu-right">
+		<section class="menu-section">
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/">Home</a></span>
+			</header>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/our-mates">Our Mates</a></span>
+			</header>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/our-story">Our Yarn</a></span>
+			</header>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/your-mates-brewhouse">Brewhouse</a></span>
+			</header>
+			<ul class="menu-section-list">
+					<li><a href="/food-menu">Menu</a></li>
+					<li><a href="/book-a-function">Book a Function</a></li>
+			</ul>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/blog">Livin'</a></span>
+			</header>
+			<ul class="menu-section-list">
+					<li><a href="/category/good-beer">Good Beer</a></li>
+					<li><a href="/category/good-mates">Good Mates</a></li>
+					<li><a href="category/goodtimes">Good Times</a></li>
+			</ul>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/shop">Shop</a></span>
+			</header>
+			<ul class="menu-section-list">
+					<li><a href="/product-category/shirts/">Shirts</a></li>
+					<li><a href="/product-category/tees/">Tees</a></li>
+			</ul>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/contact">Contact</a></span>
+			</header>
+		</section>
+	</nav>
+<main id="panel" class="panel">
+<header class="panel-header">
+<button class="toggle-button"><img style="width:40px;" src="/wp-content/uploads/2019/02/burger-1.png"/><br>menu</button>
+</header>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 	<?php if(is_front_page()) { ?>
@@ -122,31 +187,12 @@
 	<?php
 		$menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
 												   // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);
-		$menuID = $menuLocations['top']; // Get the *primary* menu ID
 		$primaryNav = wp_get_nav_menu_items($menuID); // Get the array of wp objects, the nav items for our queried location.
 	?>
-
-		    <button id='menubutton' type="button" class="drawer-toggle drawer-hamburger">
-			  <span class="sr-only">toggle navigation</span>
-			  <span class="drawer-hamburger-icon"></span>
-			</button>
-			<nav class="drawer-nav" role="navigation">
-			  <ul class="drawer-menu">
-				<li><a class="drawer-brand" href="/">Your Mates</a></li>
-				<?php
-				foreach ( $primaryNav as $navItem ) {
-
-					echo '<li><a class="drawer-menu-item" href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
-
-				}
-				?>
-			  </ul>
-			</nav>
-
 		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
 
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
-			<div id='navtop' class="navigation-top">
+			<div id='navtop' class="navigation-top" style="display:none;">
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 				</div><!-- .wrap -->
