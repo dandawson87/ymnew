@@ -2,237 +2,227 @@
 /**
  * Template Name: Food Menu 
  */
+define('WP_DEBUG',true);
 ?>
+<head>
+  <title>Your Mates Brew House - Food Menu</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="https://yourmatesbrewing.com/food-menu" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Mates Brew House - Food Menu" />
+  <meta property="og:description"   content="Check out the food menu at Your Mates Brew House" />
+  <meta property="og:image"         content="/wp-content/uploads/2019/07/Foodupload-5938.jpg" />
+</head>
 <?php get_header(); ?>
+<style>
+.site-content {
+	padding-top:0px !important;
+}
+@media print {
+		.output {
+		-ms-transform: rotate(270deg);
+		/* IE 9 */
+		-webkit-transform: rotate(270deg);
+		/* Chrome, Safari, Opera */
+		transform: rotate(270deg);
+		top: 1.5in;
+		left: -1in;
+		}
+}
+</style>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=540998179762123&autoLogAppEvents=1"></script>
 <script>
-/*
-The MIT License (MIT)
-
-Copyright 2018 takuma miura
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
-
-(function($) {
-    $.fn.swichTab = function(options) {
-        var elements = this;
-        var opts = $.extend({}, $.fn.swichTab.defaults, options);
-
-        elements.each(function() {
-            $(this).data('swichTab', new swichTab($(this), opts));
-        });
-
-        return this;
-    };
-
-    $.fn.swichTab.defaults = {
-        cahngePanel: 'toggle',
-        swiper: false,
-        index: 0,
-    };
-
-    function swichTab(elm, opts) {
-        var self = this,
-            $swichtab = elm,
-            $controller = elm.find('[data-swichtab="controller"]'),
-            $target = elm.find('[data-swichtab="target"]');
-
-        this.handleEvent = function() {
-            // click event
-            $controller.on("click", function(e) {
-                var i = $(this).index();
-                e.preventDefault();
-                // cahngePanel
-                if (opts.cahngePanel === 'toggle') {
-                    $controller.removeClass("is-active");
-                    $(this).addClass("is-active");
-                    $target.removeClass("is-active").hide().eq(i).addClass("is-active").show();
-                } else if (opts.cahngePanel === 'fade') {
-                    $controller.removeClass("is-active");
-                    $(this).addClass("is-active");
-                    $target.removeClass("is-active").hide().eq(i).addClass("is-active").stop().fadeIn();
-                }
-            });
-
-            // swiper
-            if (opts.swiper === true) {
-                self.swiper(elm);
-            }
-        };
-
-        this.swiper = function(elm) {
-            var targetLength = $target.length,
-                currentIndex = $target.filter('is-active').index(),
-                goToIndex = '',
-                direction,
-                position,
-                y1,
-                y2;
-
-            function goToPrev() {
-                if (currentIndex <= 0) {
-                    goToIndex = (targetLength - 1) % targetLength;
-                } else {
-                    goToIndex = (currentIndex - 1);
-                }
-                $controller.removeClass('is-active').eq(goToIndex).addClass('is-active');
-                $target.removeClass("is-active").hide().eq(goToIndex).addClass("is-active").stop().fadeIn();
-                currentIndex = goToIndex;
-            }
-
-            function goToNext() {
-                goToIndex = (currentIndex + 1) % targetLength;
-                $controller.removeClass('is-active').eq(goToIndex).addClass('is-active');
-                $target.removeClass("is-active").hide().eq(goToIndex).addClass("is-active").stop().fadeIn();
-                currentIndex = goToIndex;
-            }
-
-            elm.on('touchstart', onTouchStart);
-            elm.on('touchmove', onTouchMove);
-            elm.on('touchend', onTouchEnd);
-
-            function onTouchStart(event) {
-                y1 = event.originalEvent.touches[0].clientY;
-                position = getPositionX(event);
-                direction = '';
-            }
-
-            function onTouchMove(event) {
-                y2 = event.originalEvent.touches[0].clientY;
-                if (Math.abs(y1 - y2) < 5) {
-                    event.preventDefault();
-                }
-
-                if (position - getPositionX(event) > 100) {
-                    direction = 'left';
-                } else if (position - getPositionX(event) < -100) {
-                    direction = 'right';
-                }
-            }
-
-            function onTouchEnd(event) {
-                if (direction == 'right') {
-                    goToPrev();
-                } else if (direction == 'left') {
-                    goToNext();
-                }
-            }
-
-            function getPositionX(event) {
-                return event.originalEvent.touches[0].pageX;
-            }
-        };
-
-        this.init = function() {
-            $controller.eq(opts.index).addClass("is-active").show();
-            $target.eq(opts.index).addClass("is-active").show();
-            self.handleEvent();
-        };
-
-        return self.init();
-    }
-}(jQuery));
+$( document ).ready(function() {
+		document.getElementById('share-facebook-btn').onclick = function() {
+			FB.ui({
+				method: 'share',
+				app_id: '540998179762123',
+				quote: 'Check out the Food at Your Mates Brew House',	
+				hashtag: '#yourmates',
+				href: 'https://yourmatesbrewing.com/food-menu',
+			}, function(response){});
+		}
+});
 </script>
-<script type="text/javascript">
-  $('.tabGroup1').swichTab();
-</script>
-<div class="wrap">
-	<div id="primary" class="content-area">
-<div class="tabGroup tabGroup1">
-  <ul class="swichtab-controller">
-    <li data-swichtab="controller"><a href="#Beers">Beers</a></li>
-    <li data-swichtab="controller"><a href="#Food">Food</a></li>
-    <li data-swichtab="controller"><a href="#Takeaways">Takeaways</a></li>
-  </ul>
-  <div class="swichtab-contents">
-    <div id="Beers" class="swichtab-panel" data-swichtab="target">
-		<h3>Beers</h3>	
-		Beer Menu goes here
-    </div>
- 
-    <div id="Food" class="swichtab-panel" data-swichtab="target">
-		<h1>Food</h1>
-
-		<div class="row">
-		<div class="col-md-6">
-			<h3>Kids</h3>
-			<ul>
-				<li>Grilled or battered fish w/ fries or salad</li>
-				<li>Crumbed chicken w/ fries or salad</li>
-				<li>Vege or Meat Sausage and Mash</li>
-			</ul>
-			*All options $10
-			<h3>Burgers</h3>
-			<ul>
-					<li>Your Mates Burger - $18.50</li>
-					<li>ButterMilk Fried Chicken Burger - $18.00</li>
-					<li>Mooloolaba Tuna Burger - $18.00</li>
-					<li>Your Vege Burger $17 (v)</li>
-			</ul>
-			<h2>BURGER ADD ONS</h2>
-			<ul>
-				<li>Burger pattie $5 Cheese $2 Bacon $3</li>
-				<li>Make it Saucy!! $2</li>
-			</ul>
-		</div>
-		<div class="col-md-6">
-		<h3>Small Plates</h3>
-		<ul>
-			<li>Charred Corn with Chilli, Lime and Cheese$8(gf,v)</li>
-			<li>Citrus Cured Kingfish,Rice Paper Crisps$ (gf)</li>
-			<li>Buffalo Wings with Blue Cheese Sauce$14</li>
-			<li>Basket of Prawns with Cocktail Sauce$ (gf,df)</li>
-			<li>Sticky Pork Ribs$14 (gf option)</li>
-			<li>Cauliflower Bites $9 (gf,df,v)</li>
-			<li>Seasoned Vegetables $9 (v)</li>
-		</ul>
-		</div>
-		</div>
-
-		<h3>Large Plates</h3>
-		<ul>
-		<li>Our Mates Parmy $26</li>
-		<li>Herb Crumb/Cheese/Smoked Ham/Tomato/Fries/Slaw</li>
-		<li>Larry’s Braised Beef Cheek $28 (gf)</li>
-		<li>Mash/Seasoned Greens/Beer Gravy</li>
-		<li>Beer Battered Fish $24 (df)</li>
-		<li>Thick Cut Chips/Crushed Peas/Tartar Sauce</li>
-		Fish of the Day $ MP (gf,df)
-		Beer Onions/Cloudy Bay Clams/Kale Leaves
-
-		Classic Sausage and Mash $24
-		Mash/Gravy/Onion Rings
-		Veg Option Available
-		</ul>
-		<h3>To Share</h3>
-		<p>Charcuterie Board For 2 $27 - Meat/Cheese/Pickles/Bread/Crackers</p>
-		<p>Your Mates Share Plate<br>
-		Sticky Pork Ribs, Charred Corn, Buffalo Wings, Sausage, Slaw, fries, pickles</p>
-		</div>
+<div class="row" style="width:100%; margin-left:0px; margin-right:0px;">
+	<div class="col-md-5 col-sm-12 leftcol mobfull">
+			<div class="foodmenutitle">
+				<h1>Food Menu</h1>
+			</div>
+	</div>
+	<div class="col-md-7 col-sm-12 foodmenuright">
+		<p>AT YOUR MATES BREWHOUSE, WE SOURCE LOCALLY WHERE POSSIBLE AND MAKE EVERYTHING IN HOUSE. AS WE BELIVE FRESH IS ALWAYS BEST.</p>
+		<a href='/drink-menu'>
+			<button class="drinkmenubutton">Check out our drinks menu &nbsp; <i class="fa fa-beer" aria-hidden="true"></i> </button>
+		</a>
+			<button id='share-facebook-btn' class="sharebutton">
+				Share &nbsp; <i class="fa fa-share" aria-hidden="true"></i>
+			</button>
+		<button class="printbutton" onclick="window.print();">Print &nbsp; <i class="fa fa-print" aria-hidden="true"></i></button>
+	</div>
 </div>
-    </div>
- 
-    <div id="Takeaways" class="swichtab-panel" data-swichtab="target">
-      <p>piyopiyo</p>
-    </div>
-  </div>
-  <!-- /.swichtab-contents -->
-</div>
-<!-- /.swichtab -->
+<?php
+	$args=array(
+		'post_type'      => 'food-menu',
+		'post_status'    => 'publish',
+		'posts_per_page' => 500,
+		'orderby' => 'menu_order'
+	
+	);
+	$my_posts = get_posts( $args );
+	echo '<div class="row" style="width:90%; margin-left:auto; margin-right:auto;">';
+//Begin Column 1
+	echo '<div class="col-md-4 col-sm-12 mobfull">';
+	echo "<h2 class='menusubhead' style='background-color:#f07722; color:white !important; padding-left:10px;'> Share Plates: All Day </h2>";
+	foreach($my_posts as $p) {	
+		$cat =	wp_get_post_terms($p->ID, 'food-menu-category');
+		foreach($cat as $c) {
+			if($c->term_taxonomy_id == 63) {
+				$price = get_post_meta($p->ID, 'price', true);
+				?>
+				<div class='fooditemcontainer'>
+					<div class="fooditemleft">
+						<h4 class='menutitle'>
+						<?php echo $p->post_title; ?>
+						</h4>
+					</div>
+					<div class="fooditemright">
+							<div class="menuprice">
+								<?php echo " $" . $price; ?>
+							</div>
+					</div>
+				</div>
+				<div class="itemcontent">
+					<?php echo $p->post_content; ?>
+				</div>
+				<?php
+			}
+		}	
+	}
+	echo "</div>";
+
+//Begin Column 2
+	echo '<div class="col-md-4 col-sm-12 mobfull">';
+	echo "<h2 class='menusubhead' style='background-color:#f07722; color:white !important; padding-left:10px;'> Salads: Lunch &amp; Dinner</h2>";
+	foreach($my_posts as $p) {	
+		$cat =	wp_get_post_terms($p->ID, 'food-menu-category');
+		foreach($cat as $c) {
+			if($c->term_taxonomy_id == 75) {
+				$price = get_post_meta($p->ID, 'price', true);
+				?>
+				<div class='fooditemcontainer'>
+					<div class="fooditemleft">
+						<h4 class='menutitle'>
+						<?php echo $p->post_title; ?>
+						</h4>
+					</div>
+					<div class="fooditemright">
+							<div class="menuprice">
+								<?php echo " $" . $price; ?>
+							</div>
+					</div>
+				</div>
+				<div class="itemcontent">
+					<?php echo $p->post_content; ?>
+				</div>
+				<?php
+			}
+		}	
+	}
+	echo "<h2 class='menusubhead' style='background-color:#f07722; color:white !important; padding-left:10px; padding-top:2px !important;'> BURGERS: Lunch &amp; Dinner </h2>";
+	foreach($my_posts as $p) {	
+		$cat =	wp_get_post_terms($p->ID, 'food-menu-category');
+		foreach($cat as $c) {
+			if($c->term_taxonomy_id == 61) {
+				$price = get_post_meta($p->ID, 'price', true);
+				?>
+				<div class='fooditemcontainer'>
+					<div class="fooditemleft">
+						<h4 class='menutitle'>
+						<?php echo $p->post_title; ?>
+						</h4>
+					</div>
+					<div class="fooditemright">
+							<div class="menuprice">
+								<?php echo " $" . $price; ?>
+							</div>
+					</div>
+				</div>
+				<div class="itemcontent">
+					<?php echo $p->post_content; ?>
+				</div>
+				<?php
+			}
+		}	
+	}
+	echo "<br>Add Bacon - $3 ";
+	echo "<br>Add Avo - $3 ";
+	echo "<br>Add Patty - $6 ";
+	echo "<br>Add Gluten Free Bun - $2";
+	echo "</div>";
+//Begin Column 3 
+	echo '<div class="col-md-4 col-sm-12 mobfull">';
+	echo "<h2 class='menusubhead' style='background-color:#f07722; color:white !important; padding-left:10px;'> Mains: Lunch &amp; Dinner </h2>";
+	foreach($my_posts as $p) {	
+		$cat =	wp_get_post_terms($p->ID, 'food-menu-category');
+		foreach($cat as $c) {
+			if($c->term_taxonomy_id == 76) {
+				$price = get_post_meta($p->ID, 'price', true);
+				?>
+				<div class='fooditemcontainer'>
+					<div class="fooditemleft">
+						<h4 class='menutitle'>
+						<?php echo $p->post_title; ?>
+						</h4>
+					</div>
+					<div class="fooditemright">
+							<div class="menuprice">
+								<?php echo " $" . $price; ?>
+							</div>
+					</div>
+				</div>
+				<div class="itemcontent">
+					<?php echo $p->post_content; ?>
+				</div>
+				<?php
+			}
+		}	
+	}
+	echo "<h2 class='menusubhead' style='background-color:#f07722; color:white !important; padding-left:10px; padding-top:2px !important;'> Kids Menu: Lunch &amp; Dinner </h2>";
+	foreach($my_posts as $p) {	
+		$cat =	wp_get_post_terms($p->ID, 'food-menu-category');
+		foreach($cat as $c) {
+			if($c->term_taxonomy_id == 65) {
+				$price = get_post_meta($p->ID, 'price', true);
+				?>
+				<div class='fooditemcontainer'>
+					<div class="fooditemleft">
+						<h4 class='menutitle'>
+						<?php echo $p->post_title; ?>
+						</h4>
+					</div>
+					<div class="fooditemright">
+							<div class="menuprice">
+								<?php echo " $" . $price; ?>
+							</div>
+					</div>
+				</div>
+				<div class="itemcontent">
+					<?php echo $p->post_content; ?>
+				</div>
+				<?php
+			}
+		}	
+	}
+	echo "</div>";
+	echo "</div>";
+?>
+<div class="menubottom"><i>GF</i> Gluten Free | <i>DF</i> Dairy Free | <i>V</i> Vegetarian | <i>VG</i> Vegan | <p style='font-size:0.5em;'>All menu options are subject to seasonal change, if you have any dietry questions or
+concerns please ask our friendly staff.</p> </div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
+</div><!-- .wrap -->
+
 <?php get_footer();

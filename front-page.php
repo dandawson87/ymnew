@@ -14,8 +14,13 @@
 
 get_header(); ?>
 
+	<?php include "frontbuttons.php"; ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+	<?php include "recentposts.php"; ?>
+	<?php include "shopfp.php"; ?>
+	<?php include "merchfp.php"; ?>
+	<?php include "saygday.php"; ?>
 
 		<?php // Show the selected frontpage content.
 		if ( have_posts() ) :

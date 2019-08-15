@@ -26,7 +26,6 @@ if(is_front_page()) {
 		</div><!-- .site-branding-text -->
 
 		<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
-		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
 	<?php endif; ?>
 	</div><!-- .inner -->
 	</div><!-- .wrap -->
@@ -34,14 +33,17 @@ if(is_front_page()) {
 			<?php if ( is_front_page() ) : ?>
 	<div class="font-page-text">
 				<h1 class="site-title"></h1>
-				<p class='taglineym'>BREWING GOOD TIMES.</p>
+				<div class="taglinecontainer">
+					<div class='taglineym'>BREWING </div>
+					<div class='slantysquare'><div class='slantytext'>GOOD</div></div>
+					<div class='taglineym'>TIMES</div>
+				</div>
 				<a href='#content'><button style='color:white; background:none; border:2px solid white; border-radius:20px;
 												 padding:10px; position:relative; text-align:center; margin-left:auto; margin-right:auto; display:block;' class='menu-scroll-down'>Scroll for more</button></a>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php endif; ?>
 	</div> <!-- Endd front page text -->
-<div class="ymdivider"></div>
 <?php } else { 
 ?>
 

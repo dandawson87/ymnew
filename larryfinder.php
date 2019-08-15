@@ -63,7 +63,7 @@ input:focus {
 <div class="wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-	<h1 style='text-align:center; margin-left:auto; margin-right:auto;'>Find Your Closest Watering Hole</h1>
+	<h1 style='text-align:center; margin-left:auto; margin-right:auto; font-family:toyler; text-align:center;'>Find Your Closest Watering Hole</h1>
 	<div class="row" style='max-width:1200px; margin-left:auto; margin-right:auto;'>
 		<div class="col-md-4">
 				<div id="venues">

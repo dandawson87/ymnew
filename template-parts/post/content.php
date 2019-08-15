@@ -25,8 +25,38 @@
 .content-area {
 	padding-top:10px
 }
-</style>
+#secondary {
+	margin-top:3em;
+}
+.search-form .search-submit .icon {
+	background-color: transparent !important;
+	display:block !important;
+	color:#f17720;
+}
+.search-form .search-submit { 
+	color:#f17720;
+	background-color: white !important;
+}
 
+</style>
+</div></div>
+<div class="backgroundimage" style="background-image:url('/wp-content/uploads/2019/08/landcruiser.png'); max-height:250px; margin-top:-10px;"></div>
+<div class="site-content-contain">
+	<div id="content" class="site-content">
+		<div class="wrap">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main" role="main">
+
+<div class="recentheader">
+		<div class="slantysquaresub">
+		<h1 class="slantytextsub">News</h1>
+		</div>
+</div>
+<div>
+<?php
+	echo get_the_post_thumbnail( $post_id, 'full', array( 'class' => 'alignleft' ) );
+?>
+</div>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 	if ( is_sticky() && is_home() ) :
@@ -47,11 +77,11 @@
 		};
 
 		if ( is_single() ) {
-			the_title( '<h4 class="entry-title">', '</h4>' );
+			the_title( '<h3 class="entry-title">', '</h3>' );
 		} elseif ( is_front_page() && is_home() ) {
 			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 		} else {
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 		}
 		?>
 	</header><!-- .entry-header -->

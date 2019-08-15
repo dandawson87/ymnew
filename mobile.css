@@ -1,0 +1,580 @@
+
+@media only screen 
+and (max-device-width : 500px)  {
+
+#heading1 {
+	display:none !important;
+}
+#heading2 {
+	display:none !important;
+}
+#img3 {
+	display:none !important;
+}
+#img2 {
+	display:none !important;
+}
+.site-branding {
+	top:2px !important;
+}
+
+.arrowbeer {
+	display:none !important;
+}
+
+#newsLetter{
+	z-index:9999999999;
+	width:100%;
+	height:100%:
+	display:none;
+	bottom:800px !important;
+}
+
+.newsLetterModal {
+	width:100% !important;
+}
+
+.findwaterhole {
+	font-size:1em !important;
+}
+.ourmatesfooter {
+	width:100% !important;
+}
+
+#addtocart {
+	margin-top:2px !important;
+}
+
+.productcontainer {
+	width:100% !important;
+}
+
+.disappearmobile {
+	display:none;
+	
+}
+
+#beersub {
+	height:6em !important;
+}
+
+#beertext {
+	font-size:4em !important;
+}
+
+#merchtext {
+	font-size:4em !important;
+}
+
+#merchsub {
+	height:6em !important;
+}
+
+
+
+.shopbuttons {
+	padding-right:5px !important;
+}
+
+.mixedproductcontainer {
+	width:100% !important;
+}
+#storeheader {
+	margin-top:1em;
+	font-size:4em;
+	line-height:1em;
+	margin-bottom:1em;
+}
+.agemodalcontainer {
+	width:100% !important;
+}
+.navlogofront {
+	left:30% !important;
+}
+#ageverify {
+	z-index:99999999999999 !important;
+	background-image:none !important;
+}
+
+.agetitle {
+	font-size:1em;
+}
+
+.agelogo {
+	width:8em !important;
+}
+
+.fourcans {
+	margin-top:0.5em;
+}
+
+.ageverifycontent {
+	padding:5px !important;
+	margin-top:1em !important;
+	width:90% !important;
+	background-image:none !important;
+}
+
+#navtop {
+	display:none !important;
+}
+.menu-header {
+	padding:5px;
+}
+.agetext p {
+		font-family:'Roboto Condensed'; 
+		font-size:0.8em !important; 
+} 
+.mobfull {
+	width:100% !important;
+	display:contents;
+}
+.agebutton {
+	font-family:'ymreg';
+	padding:1.5em;
+	width:45%;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.custom-header-media {
+	width:100%;
+	height:250px !important;
+	overflow-y:hidden !important;
+}
+
+.site-branding {
+	top:2px !important;
+	width:100%;
+	height: auto !important;
+}
+.menusubhead {
+	width:100% !important;
+	margin-top:10px !important;
+}
+
+.wrapym {
+	width:75px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:auto !important;
+}
+.foodmenuright {
+	width:100% !important;
+	display:block;
+	margin-bottom:10px !important;
+}
+.foodmenuright p {
+	width:100% !important;
+}
+.foodmenutitle {
+	width:100%;
+	height:auto;
+}
+.foodmenutitle h1 {
+	font-size:0.5em;
+	margin-top:0.1em;
+}
+.fooditemtitlecontainer {
+	width:100%;
+	display:inline-block;
+}
+
+.menu-section {
+	padding:5px;
+	margin-top:80px;
+}
+.menu-section-list {
+	padding:5px;
+	margin-left:24%;
+	list-style:none;
+	font-size:1em;
+}
+.menu-section-list li:before {
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
+.menu-header-title a {
+	font-size:1em;
+    font-family:ymtitle;
+	color:#1dbcad !important;
+	padding:30px;
+	font-weight:400;
+}
+.toggle-button {
+	background:none;
+	position: absolute;
+    left: 1px;
+    top: 1px;
+    z-index: 999999999999999999;
+	display:block;
+}
+.toggle-button {
+	background:none;
+}
+
+.font-page-text {
+	font-size:6px;
+	top:190px !important;
+}
+	.ymdivider {
+		display:none;
+	}
+#ageverify {
+	z-index:9999999999;
+	width:100%;
+	height:100%:
+	max-width:450px;
+}
+#style-tabs ul li {
+	display:inline-flex !important;
+	padding:2px !important;
+	border:1px solid grey;
+	text-decoration:none;
+	background:#5bc2ad !important;
+	color:white;
+	width:40% !important;
+}
+
+.verifymodal {
+	max-width:450px;
+	background-color:rgb(0,0,0,0.75);
+}
+#wp-custom-header {
+	max-width:500px;
+	width:100% !important;
+}
+
+.custom-logo-link {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.wrapyminner {
+	width:100% !important;
+	left:0;
+	top:-20px !important;
+	position:absolute;
+}
+.row {
+	max-width:500px !important;
+}
+.frontbeerfindercontainer{
+	max-width:500px !important;
+	width:100% !important;
+}
+#map {
+	max-width:500px;
+	display:none;
+}
+#page {
+	width:100%;
+	max-width:500px;
+}
+.wrapyminner {
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+
+.navlogofront {
+	display:none;
+}
+
+.bigbuttons {
+	font-size:5px !important;
+	width:100% !important;
+}
+
+.shopthumb {
+	width:80%;
+}
+
+.col-4 {
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+
+.buttonone {
+	height:80px !important;
+	margin-left:0px !important;
+	margin-right:0px !important;
+}
+.buttontwo {
+	height:80px !important;
+}
+.buttonthree {
+	height:80px !important;
+}
+
+.yellowcallout {
+	height:10em !important;
+	
+}
+.footerjoinbutton {
+	font-size:1em !important;
+}
+
+.waterholebutton {
+	margin-top:0em !important;
+}
+.waterholescont {
+	height:10em !important;
+}
+
+.yellowcalloutinner {
+	margin-top:2em;
+}
+.yellowcalloutinner div {
+	width:100% !important;
+	font-size:1em !important;
+	letter-spacing:normal !important;
+}
+
+.littlebuttonone {
+	display:none !important;
+}
+.littlebuttontwo {
+	display:none !important;
+}
+.littlebuttonthree {
+	display:none !important;
+}
+
+.recentpostscontainer {
+	width:100% !important;
+	margin-left:0px !important;
+	margin-right:0px !important;
+}
+
+.featuredpost {
+	min-height:200px !important;
+	min-width: 200px !important;
+}
+
+.featuredfooter {
+	font-size:1em !important;
+}
+
+.featuredsquare {
+	font-size:1em !important;
+	padding:2px !important;
+}
+.secondarypost {
+	border-left:none !important;	
+	margin-top:2px !important;
+}
+
+.saygday {
+	min-height:200px !important;
+}
+
+.shopnowcol {
+	width:50% !important;
+	margin-bottom:20px !important;
+}
+
+.shopnowbutton {
+	font-size:1em !important;
+	margin:0px !important;
+	width:100% !important;
+
+}
+
+.shopnowmerchbutton {
+	margin:0px !important;
+	width:100% !important;
+	font-size:1em !important;
+	margin-bottom:20px;
+}
+#functions {
+	margin-left:2em !important;
+	height:4em !important;
+}
+
+#ourvision {
+	margin-left:3em !important;
+	height:4em !important;
+}
+#commandments {
+	margin-left:3em !important;
+	height:4em !important;
+}
+
+#ouryarnheader {
+	margin-left:3em !important;
+	height:6em !important;
+}
+#brewhouseheader {
+	margin-left:20% !important;
+	margin-right:20% !important;
+	width:60%;
+	text-align:center;
+}
+#mobbut1 {
+	display:inline-block !important;
+	padding:5px;
+}
+#mobbut2 {
+	display:inline-block !important;
+	padding:5px;
+}
+#mobbut3 {
+	display:inline-block !important;
+	padding:5px;
+}
+#mobbut4 {
+	display:inline-block !important;
+	padding:5px;
+}
+
+#brewtext {
+	font-size:1.2em;
+}
+
+
+.recentheader {
+	width:100% !important;
+}
+
+.slantysquaresubgday1 {
+	margin-left:25px !important;
+}
+.slantysquaresubgday2 {
+	margin-left:25px !important;
+}
+
+.site-footer {
+	border-top:none !important;
+
+}
+.site-footer .wrap {
+	border-top:0px !important;
+	margin-top:0px !important;
+	padding-top:0em !important;
+}
+
+.contactusbutton {
+	font-size:1em !important;
+	width:80% !important;
+	margin-left:10% !important;
+	background-color:white !important;
+}
+
+.slantysquaresub {
+	height:40px !important;
+	margin-left:10px !important;
+	
+}
+
+.slantytextsub {
+	font-size:22px !important;
+}
+
+.smallbannerimg {
+	display:none;
+}
+.backgroundimage {
+	display:none;
+}
+	.site-title {
+		font-size:28px !important;
+		width:100%:
+		margin-top:5px !important;
+		padding-bottom:20px !important;
+	}
+	.taglineym {
+		display:none;
+	}
+	.site-branding-text {
+		display:none;
+	}
+	.contactus {
+		padding:10px;
+		padding-bottom:20px;
+		height:110%;
+	}
+	.menu-toggle {
+		display:none !important;
+	}
+	.navlogo {
+		position:absolute;
+		top:0px;
+		left:35%;
+		width:30%;
+	}
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
+		z-index:99999999999;
+		background-color:#f17720 !important;
+
+}
+	.wrap {
+		margin-top:50px;
+	}
+	.masthead {
+		background:white !important;
+		z-index:99999 !important;
+		min-height:100px;
+		height:100px !important;
+		position:fixed;
+	}
+	.shiftnav-toggle-button {
+		display:block;
+	}
+		.navigation-top {
+			border:none;
+		}
+		.drawer-hamburger {
+			display:block;
+			position:fixed;
+			right:1px;
+		}
+		.drawer-nav {
+			display:block;
+		}
+	.drawer-nav {
+		z-index:9999999999999999 !important;
+	}
+	.drawer-overlay {
+		background:white;
+	}
+	.site-content-contain  {
+		z-index:1 !important;
+	}
+	#brewinggoodtimesvid {
+		width:100%;
+	}
+	.vidcontainer {
+		width:100%;
+	}
+		.video-container {
+			width:100%;
+		}
+	.custom-header {
+		width:100% !important;
+		height:250px !important;
+	}
+	.crfooter {
+		height:100px !important;
+	}
+	.footerunderline {
+		margin-top:25px !important;
+	}
+	.toggle-button {
+		display: block !important;
+	}
+	#mobileline {
+		display:block !important;
+	}
+}
+

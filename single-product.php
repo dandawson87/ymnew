@@ -19,7 +19,43 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-get_header(); ?>
+
+defined( 'ABSPATH' ) || exit;
+the_post();
+global $product;
+
+?>
+<head>
+  <title>Your Mates Brewing - Online Store</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="https://yourmatesbrewing.com/product/<?php echo $product->get_slug(); ?>" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="<?php echo $product->get_name(); ?>" />
+  <meta property="og:description"   content="<?php echo $product->get_description(); ?>" />
+  <meta property="og:image"         content="<?php echo get_the_post_thumbnail_url($product->ID); ?>" />
+</head>
+<?php get_header(); ?>
+<style>
+.site-content {
+	padding-top:0px !important;
+}
+
+a {
+	text-decoration:none;
+	color:#56b8ad;
+}
+a:hover {
+	text-decoration:none !important;
+}
+</style>
+<div class="taglinecontainer" style='background-color: #4180b2; width:100%; text-align:center;'>
+	<div class="taglineym" id="storeheader">Your Mates Online Store</div>
+</div>
+<div class="shopbuttons">
+<a style='color:black;' href='/cart'><i class="fa fa-shopping-cart"></i></a> &nbsp;
+<a style='color:black;' href='/checkout'><i class="fas fa-cash-register"></i></a>
+</div>
 
 <style>
 #secondary {
@@ -31,37 +67,8 @@ display:none !important;
 <a href='/cart'><i style='font-size:22px; float:right; padding:10px;' class="fa fa-shopping-cart"></i></a>
 <a href='/checkout/'><i style='font-size:22px; float:right; padding:10px;' class="fa fa-credit-card"></i></a>
 	<?php
-	
-		/**
-		 * woocommerce_before_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
-
-		<?php endwhile; // end of the loop. ?>
-
-	<?php
-		/**
-		 * woocommerce_after_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-		 */
+		wc_get_template_part( 'content', 'single-product' ); 
 		do_action( 'woocommerce_after_main_content' );
-	?>
-
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
 </div>

@@ -14,6 +14,7 @@ $custom_logo_id = get_theme_mod( 'custom_logo' );
 $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 ?>
 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentyseventeen' ); ?>">
+<img src="https://yourmatesbrewing.com/wp-content/uploads/2018/10/cropped-Your-Mates-Brewing-Company.png" class="navlogofront">
 	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
 		<?php
 		echo twentyseventeen_get_svg( array( 'icon' => 'bars' ) );
@@ -26,10 +27,12 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 		'theme_location' => 'top',
 		'menu_id'        => 'top-menu',
 	) ); ?>
-<?php if(!is_front_page() ) { echo "<img src='" . $image[0] . "' class='navlogo'></img>"; } ?>
-<?php if(is_front_page() ) { echo "<img src='" . $image[0] . "' class='navlogofront'></img>"; } ?>
-
 	<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && has_custom_header() ) : ?>
 		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
 	<?php endif; ?>
+	<div class="socialmenu">
+<a href='https://www.facebook.com/yourmatesbrewing/' target='_blank'><i style='font-size:2.5em; line-height:0.5em;' class="fab fa-facebook-square"></i></a>
+<a href='https://www.instagram.com/yourmatesbrewing/' target='_blank'><i style='font-size:2.5em; line-height:0.5em;' class="fab fa-instagram"></i></a>
+<a href='https://www.youtube.com/channel/UCg9qD8LCbtW5ikQYNneRfUw' target='_blank'><i style='font-size:2.5em; line-height:0.5em;' class="fab fa-youtube"></i></a>
+	</div>
 </nav><!-- #site-navigation -->
