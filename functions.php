@@ -267,7 +267,7 @@ create_api_tap_finder_ios();
  
 function get_tap_finder_for_api( $object ) {
 	global $wpdb;
-	$results = $wpdb->get_results( "SELECT * FROM taps WHERE type=1", ARRAY_A);
+	$results = $wpdb->get_results( "SELECT * FROM taps WHERE type=1 OR type=2", ARRAY_A);
 	header("Content-type:application/json"); 
 	header("Status: 200");
 	return json_encode($results);
@@ -275,7 +275,7 @@ function get_tap_finder_for_api( $object ) {
 
 function get_tap_finder_for_api_ios( $object ) {
 	global $wpdb;
-	$results = $wpdb->get_results( "SELECT * FROM taps WHERE type=1");
+	$results = $wpdb->get_results( "SELECT * FROM taps WHERE type=1 OR type=2");
 	header("Content-type:application/json"); 
 	header("Status: 200");
 	$x = array();
@@ -331,6 +331,20 @@ function wc_remove_description_tab( $tabs ) {
 		unset( $tabs['description'] );	    
 	}	
 }
+
+function replacing_template_loop_product_thumbnail() {
+    // Remove product images from the shop loop
+    remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
+    // Adding something instead
+    function wc_template_loop_product_replaced_thumb() {
+		$product = wc_get_product();
+		if($product) {
+        	echo $product->get_image('full');
+		}	
+    }
+    add_action( 'woocommerce_before_shop_loop_item_title', 'wc_template_loop_product_replaced_thumb', 10 );
+}
+add_action( 'woocommerce_init', 'replacing_template_loop_product_thumbnail');
 
 /**
  * Register custom fonts.

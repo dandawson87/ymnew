@@ -51,6 +51,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 --------------------------------------------------------------*/
 @import url("mobile.css");
+@import url("tablet.css");
 
 html {
 	font-family: sans-serif;
@@ -1433,12 +1434,15 @@ a:hover .nav-title,
 	display:inline-block;
 	margin-top:8px;
 }
-#top-menu li a {
-	color:#333333;
-	font-family:'Roboto Condensed';
-	font-size:1em;
-	vertical-align:middle;
-	font-weight:bolder;
+@media screen 
+and (min-device-width : 1420px)  {
+		#top-menu li a {
+			color:#333333;
+			font-family:'Roboto Condensed';
+			font-size:1em;
+			vertical-align:middle;
+			font-weight:bolder;
+		}
 }
 #top-menu li li:hover {
 	color:#333333;
@@ -1900,6 +1904,10 @@ body {
 
 .woocommerce-product-gallery__wrapper {
 	width:50%;
+}
+
+.woocommerce-loop-product__title {
+	font-size:2em;
 }
 .addtocartbutton {
 	color:#56b8ad;

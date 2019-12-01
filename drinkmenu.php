@@ -19,6 +19,9 @@ define('WP_DEBUG',true);
 .site-content {
 	padding-top:0px !important;
 }
+.navlogofront {
+	display:none !important;
+}
 </style>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=540998179762123&autoLogAppEvents=1"></script>

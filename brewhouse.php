@@ -61,8 +61,16 @@
 				</div>
 				<h3 style='margin-top:10px;'>Let us host your next function</h3>
 				<p style='text-align:left;'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					The brewhouse offers some great areas to host your next function, be it a birthday, wedding or workplace event! <br>
 				</p>
+					<h5>The Deck</h5>
+				<p>
+		This area is a raised platform that overlooks our venue. The deck is suitable for intimate occasions that are celebrated whilst sitting down and enjoying what life has to offer.
+				</p>
+<h5>Main Dining</h5>
+<p>This area stretches out along our venue adjacent to the bar. This space is perfect for large groups and those milestone occasions. We can cater to both sit down functions and stand up occasions.</p>
+<h5>Bar</h5>
+<p>This area is located adjacent to the arcade oom. This space is perfect for a good time occasion. Have a drink, share a yarn and a bit of finger food with your mates or colleagues.</p>
 				<div class="row">
 					<div class="col-md-6">
 						<div onclick="window.scrollTo(0, $('#booknow').offset().top);" class="littlebuttonone" id='mobbut3' style='margin-top:0px; cursor:pointer;'>
@@ -70,7 +78,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<a href='/wp-content/uploads/2019/08/YM-Brewhouse-Function-Package.pdf' download="Your Mates Brewhouse Menu.pdf">
+						<a href='/wp-content/uploads/2019/10/YM-Brewhouse-Function-Package.pdf' download="Your Mates Brewhouse Menu.pdf">
 						<div class="littlebuttonone" style='margin-top:0px; cursor:pointer; width:100%;' id='mobbut4'>
 							Download Info Pack
 						</div>
@@ -91,7 +99,7 @@
 						<?php echo do_shortcode('[contact-form-7 id="501" title="Book a Function"]'); ?>
 					</div>
 					<div class="col-md-6">
-						<p style='margin-top:20px; margin-bottom:10px;'>Book Your Function by filling out this form, or call us on <a href='tel:0753294733'>(07) 5329 4733</a>.
+						<p style='margin-top:20px; margin-bottom:10px; font-size:18px;'>Book Your Function by filling out this form, or call us on <a href='tel:0753294733'>(07) 5329 4733</a>.
 						<img src='/wp-content/uploads/2019/02/Venue-101upload-0700-e1550389873158.jpg'>
 					</div>
 				</div>

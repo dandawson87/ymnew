@@ -19,6 +19,9 @@ define('WP_DEBUG',true);
 .site-content {
 	padding-top:0px !important;
 }
+.navlogofront {
+	display:none !important;
+}
 @media print {
 		.output {
 		-ms-transform: rotate(270deg);

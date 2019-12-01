@@ -61,9 +61,11 @@ input:focus {
 }
 </style>
 <div class="wrap">
+		<div class="slantysquaresub">
+			<h1 class="slantytextsub">Find a Beer</h1>
+		</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-	<h1 style='text-align:center; margin-left:auto; margin-right:auto; font-family:toyler; text-align:center;'>Find Your Closest Watering Hole</h1>
 	<div class="row" style='max-width:1200px; margin-left:auto; margin-right:auto;'>
 		<div class="col-md-4">
 				<div id="venues">
@@ -71,7 +73,7 @@ input:focus {
 				  <ul class="list">
 					<li>
 					  <h3 class="title">Your Mates Brewing Company</h3>
-					  <p class="address">30 Allen St, Moffat Beach</p>
+					  <p class="address">41 Technology Drive, Warana</p>
 					</li>
 				  </ul>
 
@@ -88,7 +90,7 @@ input:focus {
 			if (navigator.geolocation) {
 		        navigator.geolocation.getCurrentPosition(showPosition);
 		    }
-			var myLatLng = {lat: -26.728540, lng: 153.128860};
+			var myLatLng = {lat: -26.726940, lng: 153.123245};
 			map = new google.maps.Map(document.getElementById('map'), {
 				zoom: 10,
 				center: myLatLng
@@ -103,7 +105,7 @@ input:focus {
 			//Put Home Icon
 				 	var icon = {
 						url: 'https://yourmatesbrewing.com/wp-content/uploads/2018/11/youarehere.png',
-						scaledSize: new google.maps.Size(70, 100), // scaled size
+						scaledSize: new google.maps.Size(50, 70), // scaled size
 						origin: new google.maps.Point(0,0), // origin
 						anchor: new google.maps.Point(0, 50) // anchor
 					};

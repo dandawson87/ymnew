@@ -3,7 +3,6 @@
 /**
  * Template Name: Shop 
  */
-define('WP_DEBUG',true);
 ?>
 <head>
   <title>Your Mates Brewing - Online Store</title>
@@ -94,7 +93,7 @@ $args = array( 'post_type' => 'product', 'posts_per_page' => 10,'product_cat' =>
 	echo "<div class='shopproductcontainer'>";
 			echo "<div class='mixedproductcontainer'>";
 				$product = wc_get_product(731);
-				echo "<a href='/" . get_permalink($product->ID) . "'>";
+				echo "<a href='/" . get_permalink(731) . "'>";
 				echo "<h1 class='beerheader'>" . $product->name . "</h1>";
 				echo "<div class='mixedbeerphoto'>" . $product->get_image('woocommerce_single') . "</div>";
 				?>
@@ -105,7 +104,7 @@ $args = array( 'post_type' => 'product', 'posts_per_page' => 10,'product_cat' =>
 					</div>
 				</a>
 				<?php
-					$add_to_cart = do_shortcode('[add_to_cart_url id="'.$post->ID.'"]');
+					$add_to_cart = do_shortcode('[add_to_cart_url id="731"]');
 				?>
 					<a href='<?php echo $add_to_cart; ?>'><div class="addtocartbutton" id="#addtocart" style="width:50%; margin-left:25%;">Add To Cart</div></a>
 				<hr class="mobileline" display="display:none;">
@@ -132,7 +131,14 @@ $args = array( 'post_type' => 'product', 'posts_per_page' => 10,'product_cat' =>
 				?>
 					<div class='priceheader'>
 						<div class="slantysquaresubprice" id="#merchsub">
-							<h1 class="slantytextsubprice" id="#merchtext" style='color:#56b8ad;'>$<?php echo (int)$product->get_variation_regular_price( 'min' ); ?></h1>	
+							<?php 
+								
+								$price = $product->regular_price;
+								if($price == null || $price == 0) {
+									$price = (int)$product->get_variation_regular_price( 'min' );
+								}
+							?>
+							<h1 class="slantytextsubprice" id="#merchtext" style='color:#56b8ad;'>$ <?php echo $price; ?></h1>	
 						</div>
 					</div>
 				</a>

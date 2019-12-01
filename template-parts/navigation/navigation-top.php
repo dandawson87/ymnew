@@ -31,8 +31,16 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
 	<?php endif; ?>
 	<div class="socialmenu">
-<a href='https://www.facebook.com/yourmatesbrewing/' target='_blank'><i style='font-size:2.5em; line-height:0.5em;' class="fab fa-facebook-square"></i></a>
-<a href='https://www.instagram.com/yourmatesbrewing/' target='_blank'><i style='font-size:2.5em; line-height:0.5em;' class="fab fa-instagram"></i></a>
-<a href='https://www.youtube.com/channel/UCg9qD8LCbtW5ikQYNneRfUw' target='_blank'><i style='font-size:2.5em; line-height:0.5em;' class="fab fa-youtube"></i></a>
+<a href='https://www.facebook.com/yourmatesbrewing/' target='_blank'><i style='font-size:1.5em; line-height:0.5em;' class="fab fa-facebook-square"></i></a>
+<a href='https://www.instagram.com/yourmatesbrewing/' target='_blank'><i style='font-size:1.5em; line-height:0.5em;' class="fab fa-instagram"></i></a>
+<a href='https://www.youtube.com/channel/UCg9qD8LCbtW5ikQYNneRfUw' target='_blank'><i style='font-size:1.5em; line-height:0.5em;' class="fab fa-youtube"></i></a>
+<?php
+if ( WC()->cart->get_cart_contents_count() > 0 ) {
+?>
+<a style='color:black; margin-top:5px;' href='/cart'><i style='font-size:1.5em; line-height:0.5em;' class="fa fa-shopping-cart"></i></a> &nbsp;
+<a style='color:black; margin-top:5px;' href='/checkout'><i style='font-size:1.5em; line-height:0.5em;' class="fas fa-cash-register"></i></a>
+<?php
+}
+?>
 	</div>
 </nav><!-- #site-navigation -->

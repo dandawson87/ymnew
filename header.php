@@ -144,33 +144,34 @@ $(document).ready(function() {
 				<span class="menu-header-title"><a href="/">Home</a></span>
 			</header>
 			<header class="menu-header">
-				<span class="menu-header-title"><a href="/our-mates">Our Mates</a></span>
+				<span class="menu-header-title"><a href="/ym-shop">Shop</a></span>
+			</header>
+			<ul class="menu-section-list">
+					<li><a href="/product-category/merch/">Merch</a></li>
+					<li><a href="/product-category/beer/">Beer</a></li>
+					<li><a href="/cart/">Cart</a></li>
+					<li><a href="/checkout/">Checkout</a></li>
+			</ul>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/your-mates-finder/">Watering Holes</a></span>
+			</header>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/your-mates-brewhouse">The Brewhouse</a></span>
+			</header>
+			<ul class="menu-section-list">
+					<li><a href="/your-mates-brewhouse/#booknow">Book a Function</a></li>
+					<li><a href="/drink-menu/">Drinks Menu</a></li>
+					<li><a href="/food-menu/">Food Menu</a></li>
+			</ul>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/news">News</a></span>
 			</header>
 			<header class="menu-header">
 				<span class="menu-header-title"><a href="/our-story">Our Yarn</a></span>
 			</header>
 			<header class="menu-header">
-				<span class="menu-header-title"><a href="/your-mates-brewhouse">Brewhouse</a></span>
+				<span class="menu-header-title"><a href="/our-mates">Our Mates</a></span>
 			</header>
-			<ul class="menu-section-list">
-					<li><a href="/food-menu">Menu</a></li>
-					<li><a href="/book-a-function">Book a Function</a></li>
-			</ul>
-			<header class="menu-header">
-				<span class="menu-header-title"><a href="/blog">Livin'</a></span>
-			</header>
-			<ul class="menu-section-list">
-					<li><a href="/category/good-beer">Good Beer</a></li>
-					<li><a href="/category/good-mates">Good Mates</a></li>
-					<li><a href="category/goodtimes">Good Times</a></li>
-			</ul>
-			<header class="menu-header">
-				<span class="menu-header-title"><a href="/shop">Shop</a></span>
-			</header>
-			<ul class="menu-section-list">
-					<li><a href="/product-category/shirts/">Shirts</a></li>
-					<li><a href="/product-category/tees/">Tees</a></li>
-			</ul>
 			<header class="menu-header">
 				<span class="menu-header-title"><a href="/contact">Contact</a></span>
 			</header>

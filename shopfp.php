@@ -7,7 +7,7 @@
 						<h1 class="slantytextsub">Beers</h1>
 				</div>
 		</div>
-		<div class="col-md-6 col-sm-6 shopnowcol" style="text-align:right;">
+		<div onclick='window.location="/ym-shop"' class="col-md-6 col-sm-6 shopnowcol" style="text-align:right; pointer:cursor;">
 			<div class="shopnowbutton">SHOP NOW ></div>
 		</div>
 	</div>

@@ -7,7 +7,7 @@
 						<h1 class="slantytextsub">Merch</h1>
 				</div>
 		</div>
-		<div class="col-md-6 shopnowcol" style="text-align:right;">
+		<div onclick='window.location="/product-category/merch/";' class="col-md-6 shopnowcol" style="text-align:right; pointer:cursor;">
 			<div class="shopnowmerchbutton">SHOP NOW ></div>
 		</div>
 	</div>

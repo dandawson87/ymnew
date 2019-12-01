@@ -22,7 +22,7 @@ if ( is_active_sidebar( 'sidebar-2' ) ||
 				<div class="menufooterlinks">
 					<a class='footermenulink' href='/' style="font-family: 'Roboto Condensed', monospace;">Home</a><br>
 					<a class='footermenulink' href='/shop' style="font-family: 'Roboto Condensed', monospace;">Shop</a><br>
-					<a class='footermenulink' href='/larry-locator' style="font-family: 'Roboto Condensed', monospace;">Watering Holes</a><br>
+					<a class='footermenulink' href='/your-mates-finder' style="font-family: 'Roboto Condensed', monospace;">Watering Holes</a><br>
 					<a class='footermenulink' href='/' style="font-family: 'Roboto Condensed', monospace;">The Brew House</a><br>
 					<a class='footermenulink' href='/news' style="font-family: 'Roboto Condensed', monospace;">News</a><br>
 					<a class='footermenulink' href='/our-story' style="font-family: 'Roboto Condensed', monospace;">Our Yarn</a><br>
