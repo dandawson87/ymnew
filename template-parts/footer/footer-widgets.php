@@ -52,6 +52,7 @@ if ( is_active_sidebar( 'sidebar-2' ) ||
 					<h5 style="color:black; font-family: 'Arial', monospace; font-weight:bolder;">HOURS</h5>
 					<p style="color:black; font-family: 'Roboto Condensed', monospace;">
 						<ul style="color:black;">
+								<li>Tuesday: 11am - 9pm</li>
 								<li>Wednesday: 11am - 9pm</li>
 								<li>Thursday: 11am - 9pm</li>
 								<li>Friday: 11am - 11pm</li>

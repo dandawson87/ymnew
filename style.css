@@ -2252,6 +2252,35 @@ body {
     text-align: center;
 }
 
+.gabsbutton {
+    position: absolute;
+ 	z-index: 9999999999999999;
+    top: 69%;
+    text-align: center;
+	cursor:pointer !important; 
+	width:33%; 
+	left:33%;
+	background:#f0ea56; 
+	color:#e27e3a;
+	border:2px solid #e27e3a;
+	border-radius:15px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-family:'bebaskai';
+	font-size:1.5em;
+}
+
+.larryhead {
+	display:none;
+	width:50px;
+    position: absolute;
+    top: -99%;
+    text-align: center;
+	margin-left:auto;
+	margin-right:auto; 
+	z-index:-1;
+} 
 #brewinggoodtimesvid {
 	width:100%;
 	height:100%;

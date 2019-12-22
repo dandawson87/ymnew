@@ -1,6 +1,28 @@
-
 @media only screen 
 and (max-device-width : 500px)  {
+
+.larrycanimg {
+	width:90% !important;	
+}
+.gabsvideo {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.palmtree {
+	display:none !important;
+}
+
+.gabsbutton {
+	width: 100% !important;
+    position: absolute;
+ 	z-index: -1;
+    top: 20% !important;
+    left: 0% !important;
+    text-align: center;
+	border: 0px !important;
+}
 
 #heading1 {
 	display:none !important;
@@ -258,6 +280,7 @@ and (max-device-width : 500px)  {
 .custom-logo-link {
 	margin-left:auto;
 	margin-right:auto;
+	margin-top:20px;
 }
 
 .wrapyminner {

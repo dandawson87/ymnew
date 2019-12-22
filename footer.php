@@ -17,6 +17,11 @@
 function showPopup() {
 	$("#newsLetter").show().animate({top: (window.innerHeight / 2 - 50) + "px"}, 1000);
 }
+function showCheekyLarry() {
+	if(window.innerWidth > 600) {
+		$(".larryhead").slideDown(500);
+	}
+}
 
 </script>
 
@@ -75,6 +80,7 @@ function showPopup() {
 if(!iseighteen) {
 		$("#ageVerify").css({"display": "inline-flex"});
 }
+setTimeout("showCheekyLarry();", 4000);
 </script>
 </body>
 </html>
