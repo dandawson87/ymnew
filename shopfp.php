@@ -32,7 +32,7 @@
 			<a href="<?php echo get_permalink(); ?>">
 					<img src="<?php echo $image[0]; ?>" class="shopthumb">
 					<h3 class="shoptitle"><?php echo $product->get_name(); ?></h3>
-					<h4 class="shopprice">AUD $<?php echo $product->get_price(); ?><a style='font-size:11px;'> (per carton)</a></h4>
+					<h4 class="shopprice">AUD $<?php echo $product->get_price(); ?><a style='font-size:11px;'></a></h4>
 			</a>
 		</div>
 		<?php

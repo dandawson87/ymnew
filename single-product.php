@@ -31,8 +31,8 @@ global $product;
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
   <meta property="og:url"           content="https://yourmatesbrewing.com/product/<?php echo $product->get_slug(); ?>" />
   <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="<?php echo $product->get_name(); ?>" />
-  <meta property="og:description"   content="<?php echo $product->get_description(); ?>" />
+  <meta property="og:title"         content="<?php $product->get_name(); ?>" />
+  <meta property="og:description"   content="<?php $product->get_description(); ?>" />
   <meta property="og:image"         content="<?php echo get_the_post_thumbnail_url($product->ID); ?>" />
 </head>
 <?php get_header(); ?>
@@ -64,8 +64,6 @@ display:none !important;
 </style>
 <div id="content" class="site-content" style='padding-top:0px; font-family:"roboto mono";'>
 <div class="wrap">
-<a href='/cart'><i style='font-size:22px; float:right; padding:10px;' class="fa fa-shopping-cart"></i></a>
-<a href='/checkout/'><i style='font-size:22px; float:right; padding:10px;' class="fa fa-credit-card"></i></a>
 	<?php
 		wc_get_template_part( 'content', 'single-product' ); 
 		do_action( 'woocommerce_after_main_content' );

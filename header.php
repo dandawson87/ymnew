@@ -73,12 +73,6 @@
 	}
 	var iseighteen = false;
 $(document).ready(function() {
-	if(window.innerWidth < 600) {
-		$(".gabsbutton").css("width", "100%");
-		$(".gabsbutton").css("top", "30%");
-		$(".gabsbutton").css("left", "0");
-		$(".palmtree").hide();
-	}
 		$("#ageVerify").hide();
 		$("#verifymodal").hide();
     var nameEQ = "ymimeighteen" + "=";

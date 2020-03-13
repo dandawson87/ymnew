@@ -30,23 +30,29 @@ if(is_front_page()) {
 	</div><!-- .inner -->
 	</div><!-- .wrap -->
 </div><!-- .site-branding -->
-			<?php if ( is_front_page() ) : ?>
 	<div class='gabsbutton'>
-		<img src='/wp-content/uploads/2019/12/larryhead.png' class='larryhead'/>
-		<a href='https://www.gabsfestival.com/h100-aus-vote' target='_blank' style='cursor:pointer !important; z-index:999999999999999 !important;'>
-			<div class="gabsbuttoninner">
-			 <img src='/wp-content/uploads/2019/12/palm_trees.png' style='width:40px; float:right;' class='palmtree'/> 
-				Vote for Larry in the Gabs hottest 100! <img src='/wp-content/uploads/2019/12/palm_trees.png' style='width:40px; float:left;' class='palmtree'/>
+		<div class="row">
+			<div class="col-md-2">
+
 			</div>
-		</a>
+			<div class="col-md-8" style="display:inline-flex;">
+				<div class="bannerbutton1" onclick="window.location='https://yourmatesbrewing.com/product/larry-pale-ale/';">Buy Larry</div>	
+				<div class="bannerbutton1" onclick="window.location='https://yourmatesbrewing.com/your-mates-finder/';">Find Larry</div>	
+				<div class="bannerbutton1" onclick="window.location='#gabs';">Who is Larry?</div>	
+			</div>
+			<div class="col-md-2">
+
+			</div>
+		</div>
 	</div>
+			<?php if ( is_front_page() ) : ?>
 	<div class="font-page-text">
 				<h1 class="site-title"></h1>
-				<div class="taglinecontainer">
+<!--				<div class="taglinecontainer">
 					<div class='taglineym'>BREWING </div>
 					<div class='slantysquare'><div class='slantytext'>GOOD</div></div>
 					<div class='taglineym'>TIMES</div>
-				</div>
+				</div>-->
 				<a href='#content'><button style='color:white; background:none; border:2px solid white; border-radius:20px;
 												 padding:10px; position:relative; text-align:center; margin-left:auto; margin-right:auto; display:block;' class='menu-scroll-down'>Scroll for more</button></a>
 			<?php else : ?>

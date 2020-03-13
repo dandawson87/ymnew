@@ -64,7 +64,7 @@ $args = array( 'post_type' => 'product', 'posts_per_page' => 10,'product_cat' =>
 				?>
 					<div class='priceheader'>
 						<div class="slantysquaresubprice">
-							<h1 class="slantytextsubprice" style='color:#56b8ad;'>$<?php echo $product->regular_price; ?><a style='font-size:0.2em; letter-spacing:1px; '>Per Carton</a></h1>	
+							<h1 class="slantytextsubprice" style='color:#56b8ad;'>$<?php echo $product->regular_price; ?></h1>	
 						</div>
 					</div>
 				</a>

@@ -4,13 +4,13 @@
  */
 ?>
 <head>
-  <title>Your Mates Brew House - Drinks Menu</title>
+  <title>Your Mates Brew House - Our Yarn</title>
     <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
   <meta property="og:url"           content="https://yourmatesbrewing.com/drink-menu" />
   <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Your Mates Brew House - Drink Menu" />
-  <meta property="og:description"   content="Check out the drink menu at Your Mates Brew House" />
+  <meta property="og:title"         content="Your Mates Brew House - Our Yarn" />
+  <meta property="og:description"   content="Check out the Your Mates Yarn" />
   <meta property="og:image"         content="/wp-content/uploads/2018/12/16906335_555785184607796_161929179116339200_n.jpg" />
 </head>
 <?php get_header(); ?>

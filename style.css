@@ -266,6 +266,7 @@ legend {
 	white-space: normal;
 }
 
+
 progress {
 	display: inline-block;
 	vertical-align: baseline;
@@ -554,7 +555,7 @@ h3 {
 }
 h4 {
 	text-transform: uppercase;
-    font-size: 2em !important;
+    font-size: 2em;
     text-decoration: underline;
 }
 #panel2 {
@@ -1434,12 +1435,13 @@ a:hover .nav-title,
 	display:inline-block;
 	margin-top:8px;
 }
+
 @media screen 
 and (min-device-width : 1420px)  {
 		#top-menu li a {
 			color:#333333;
 			font-family:'Roboto Condensed';
-			font-size:1em;
+			font-size:0.9em;
 			vertical-align:middle;
 			font-weight:bolder;
 		}
@@ -1455,6 +1457,24 @@ and (min-device-width : 1420px)  {
 
 .menu-scroll-down {
 	display:none !important;
+}
+.bannerbutton1 {
+	color:#000;
+	border:4px solid #000;
+	border-radius:15px;
+	margin-left:12%;
+	margin-right:5%;
+	display:inline-flex;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-family:'bebaskai';
+	font-size:1.5em;
+	padding-left:10px;
+	padding-right:10px;
+	font-weight:600;
 }
 
 /*--------------------------------------------------------------
@@ -2258,17 +2278,8 @@ body {
     top: 69%;
     text-align: center;
 	cursor:pointer !important; 
-	width:33%; 
-	left:33%;
-	background:#f0ea56; 
-	color:#e27e3a;
-	border:2px solid #e27e3a;
-	border-radius:15px;
-	text-align:center;
-	padding-top:5px;
-	padding-bottom:5px;
-	font-family:'bebaskai';
-	font-size:1.5em;
+	width:100%; 
+display:inline-block;
 }
 
 .larryhead {
@@ -2870,6 +2881,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 
 .entry-header .entry-title {
 	margin-bottom: 0.25em;
+	text-align:left;
 }
 
 .entry-title a {
@@ -4343,6 +4355,24 @@ p > object:only-child {
 		font-size: 14px;
 		font-size: 0.875rem;
 	}
+.bannerbutton1 {
+	color:#000;
+	border:4px solid #000;
+	border-radius:15px;
+	margin-left:12%;
+	margin-right:5%;
+	display:inline-flex;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-family:'bebaskai';
+	font-size:1.5em;
+	padding-left:10px;
+	padding-right:10px;
+	font-weight:600;
+}
 
 	/* Fix image alignment */
 	img.alignleft {
@@ -4441,6 +4471,24 @@ p > object:only-child {
 		font-size: 13px;
 		font-size: 0.8125rem;
 	}
+.bannerbutton1 {
+	color:#000;
+	border:4px solid #000;
+	border-radius:15px;
+	margin-left:12%;
+	margin-right:5%;
+	display:inline-flex;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-family:'bebaskai';
+	font-size:1.5em;
+	padding-left:10px;
+	padding-right:10px;
+	font-weight:600;
+}
 
 	/* Layout */
 
@@ -5159,6 +5207,24 @@ p > object:only-child {
 		padding: 0.75em 2em;
 	}
 
+.bannerbutton1 {
+	color:#000;
+	border:4px solid #000;
+	border-radius:15px;
+	margin-left:12%;
+	margin-right:5%;
+	display:inline-flex;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-family:'bebaskai';
+	font-size:1.5em;
+	padding-left:10px;
+	padding-right:10px;
+	font-weight:600;
+}
 
 	/* Sticky posts */
 
