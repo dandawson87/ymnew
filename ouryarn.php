@@ -20,7 +20,7 @@
 	padding-top:0px !important;
 }
 </style>
-<div class="backgroundimage" style="background-image:url('/wp-content/uploads/2019/08/ouryarnteam.jpg');"></div>
+<div class="backgroundimage" style="background-image:url('/wp-content/uploads/2020/04/DSC00534.jpg');"></div>
 <div class="recentheader" style='margin-bottom:30px;'>
 		<div class="slantysquaresub" id="ouryarnheader">
 		<h1 class="slantytextsub" id="beertext">Our Yarn</h1>

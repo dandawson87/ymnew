@@ -507,6 +507,17 @@ h3 {
 	font-weight:400;
 }
 
+.tagline-design-comp{
+	font-size: 18px;
+	font-weight: 900;
+	text-align: center;
+}
+
+.lachie-email{
+	font-weight: bolder;
+	color: #1dbcad;
+}
+
 .video-container {
 	border: 2px solid black;
 	border-radius: 20px;
@@ -535,6 +546,28 @@ h3 {
 	width:110px;
 	text-align:center;
 }
+
+.freeshipping {
+	font-size:5em;
+	color:red;
+	font-family:ymtitle;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #FFFFFF;
+	text-align:center;
+	line-height:1em;
+	display: none;
+}
+.freeshipping2 {
+	font-size:3em;
+	color:red;
+	font-family:ymtitle;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #FFFFFF;
+	text-align:center;
+	line-height:1em;
+	display: none;
+}
+
 .wpswp-post-tags {
 	text-align:center;
 }
@@ -1281,7 +1314,6 @@ td:last-child {
 /*--------------------------------------------------------------
 10.0 Links
 --------------------------------------------------------------*/
-
 a {
 	color: #222;
 	text-decoration: none;
@@ -1459,22 +1491,21 @@ and (min-device-width : 1420px)  {
 	display:none !important;
 }
 .bannerbutton1 {
-	color:#000;
-	border:4px solid #000;
-	border-radius:15px;
-	margin-left:12%;
-	margin-right:5%;
+	color:#FFF;
+	border:4px solid #FFF;
 	display:inline-flex;
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top:60px;
+	margin-bottom:10px;
 	text-align:center;
 	padding-top:5px;
 	padding-bottom:5px;
 	font-family:'bebaskai';
-	font-size:1.5em;
+	font-size:2em;
 	padding-left:10px;
 	padding-right:10px;
 	font-weight:600;
+margin-left:auto;
+margin-right:auto;
 }
 
 /*--------------------------------------------------------------
@@ -1762,7 +1793,7 @@ body {
 }
 
 .saygday {
-	background-image:url('/wp-content/uploads/2019/08/boysbg.jpg');
+	background-image:url('/wp-content/uploads/2020/05/2019-September-Indies_DriveDown_upload2-6816.jpg');
 	width:100%;
 	min-height:600px;
 	background-size: cover;
@@ -2096,7 +2127,7 @@ body {
 }
 
 .buttonone:hover {
-	background-image:url('/wp-content/uploads/2019/08/goodbeer.jpg');
+	background-image:url('/wp-content/uploads/2020/05/2019-September-20-22_Explore4x4_LakeBoondooma_ManorPark_upload-1146.jpg');
 	color: #56b8ad;
 }
 .buttontwo:hover {
@@ -2501,7 +2532,7 @@ body.has-header-video .site-description {
 }
 
 .wrapyminner {
-	width: 200px;
+	width: 600px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -2537,7 +2568,6 @@ body.has-header-video .site-description {
 }
 .custom-logo-link img {
 	width: auto;
-	width:250px;
 	margin-left:auto;
 	margin-right:auto;
 	display:block !important;
@@ -4356,14 +4386,13 @@ p > object:only-child {
 		font-size: 0.875rem;
 	}
 .bannerbutton1 {
-	color:#000;
-	border:4px solid #000;
-	border-radius:15px;
+	color:#FFF;
+	border:4px solid #FFF;
 	margin-left:12%;
 	margin-right:5%;
 	display:inline-flex;
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top:60px;
+	margin-bottom:10px;
 	text-align:center;
 	padding-top:5px;
 	padding-bottom:5px;
@@ -4372,6 +4401,7 @@ p > object:only-child {
 	padding-left:10px;
 	padding-right:10px;
 	font-weight:600;
+text-shadow: 2px 2px 4px #000000;
 }
 
 	/* Fix image alignment */
@@ -4472,22 +4502,24 @@ p > object:only-child {
 		font-size: 0.8125rem;
 	}
 .bannerbutton1 {
-	color:#000;
-	border:4px solid #000;
-	border-radius:15px;
+	color:#FFF;
+	border:4px solid #FFF;
 	margin-left:12%;
 	margin-right:5%;
 	display:inline-flex;
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top:60px;
+	margin-bottom:10px;
 	text-align:center;
 	padding-top:5px;
 	padding-bottom:5px;
 	font-family:'bebaskai';
-	font-size:1.5em;
+	font-size:2.5em;
 	padding-left:10px;
 	padding-right:10px;
 	font-weight:600;
+margin-left:auto;
+margin-right:auto;
+text-shadow: 2px 2px 4px #000000;
 }
 
 	/* Layout */
@@ -5208,22 +5240,23 @@ p > object:only-child {
 	}
 
 .bannerbutton1 {
-	color:#000;
-	border:4px solid #000;
-	border-radius:15px;
+	color:#FFF;
+	border:4px solid #FFF;
 	margin-left:12%;
 	margin-right:5%;
 	display:inline-flex;
-	margin-top:20px;
+	margin-top:50px;
 	margin-bottom:20px;
 	text-align:center;
 	padding-top:5px;
 	padding-bottom:5px;
 	font-family:'bebaskai';
-	font-size:1.5em;
+	font-size:2.5em;
 	padding-left:10px;
 	padding-right:10px;
 	font-weight:600;
+margin-left:auto;
+margin-right:auto;
 }
 
 	/* Sticky posts */
@@ -5837,3 +5870,18 @@ width:100% !important;
     letter-spacing: 0.1em;
     font-size: 1.5em;
 }
+.um-cover-add-i {
+	display: none !important;
+}
+.um-header {
+	display: none !important;
+}
+.um-cover {
+	display: none !important;
+}
+
+.um-profile-nav {
+	display: none !important;
+}
+
+

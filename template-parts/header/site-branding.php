@@ -36,16 +36,17 @@ if(is_front_page()) {
 
 			</div>
 			<div class="col-md-8" style="display:inline-flex;">
-				<div class="bannerbutton1" onclick="window.location='https://yourmatesbrewing.com/product/larry-pale-ale/';">Buy Larry</div>	
-				<div class="bannerbutton1" onclick="window.location='https://yourmatesbrewing.com/your-mates-finder/';">Find Larry</div>	
-				<div class="bannerbutton1" onclick="window.location='#gabs';">Who is Larry?</div>	
+				<div class="bannerbutton1" onclick="window.location='https://yourmatesbrewing.com/ym-shop';">Buy Beer Now</div>	
 			</div>
 			<div class="col-md-2">
 
 			</div>
 		</div>
 	</div>
-			<?php if ( is_front_page() ) : ?>
+<p style="position: absolute; bottom: 1px; right: 1px; font-size: 6px;">
+	*Free Shipping to Sunshine Coast customers only. Further conditions apply, contact us for more details.
+</p> 
+<?php if ( is_front_page() ) : ?>
 	<div class="font-page-text">
 				<h1 class="site-title"></h1>
 <!--				<div class="taglinecontainer">

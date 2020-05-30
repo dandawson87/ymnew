@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Template Name: Shop 
@@ -52,7 +51,7 @@ a:hover {
 </div>
 <?php
 
-$args = array( 'post_type' => 'product', 'posts_per_page' => 10,'product_cat' => 'Beer', 'orderby' =>'date','order' => 'ASC' );
+$args = array( 'post_type' => 'product', 'posts_per_page' => 20,'product_cat' => 'Beer', 'orderby' =>'date','order' => 'ASC' );
   $loop = new WP_Query( $args );
 	echo "<div class='shopproductcontainer' style='margin-bottom:15px;'>";
 	while ( $loop->have_posts() ) : $loop->the_post();
@@ -112,6 +111,29 @@ $args = array( 'post_type' => 'product', 'posts_per_page' => 10,'product_cat' =>
 				
 			echo "</div>";
 	echo "</div>";
+	echo "<div class='shopproductcontainer'>";
+			echo "<div class='mixedproductcontainer'>";
+				$product = wc_get_product(12315);
+				echo "<a href='/" . get_permalink(12315) . "'>";
+				echo "<h1 class='beerheader'>" . $product->name . "</h1>";
+				echo "<div class='mixedbeerphoto'>" . $product->get_image('woocommerce_single') . "</div>";
+				?>
+					<div class='priceheader'>
+						<div class="slantysquaresubprice">
+							<h1 class="slantytextsubprice" style='color:#56b8ad !important;'>$<?php echo $product->regular_price; ?><a style='font-size:0.2em; letter-spacing:1px; '>Per Carton</a></h1>	
+						</div>
+					</div>
+				</a>
+				<?php
+					$add_to_cart = do_shortcode('[add_to_cart_url id="731"]');
+				?>
+					<a href='<?php echo $add_to_cart; ?>'><div class="addtocartbutton" id="#addtocart" style="width:50%; margin-left:25%;">Add To Cart</div></a>
+				<hr class="mobileline" display="display:none;">
+				<?php
+				
+			echo "</div>";
+	echo "</div>";
+
 ?>
 <div class="recentheader" style='margin-bottom:30px; margin-top:30px;'>
 		<div class="slantysquaresub">

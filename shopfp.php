@@ -17,7 +17,7 @@
 <?php
     $args = array(
         'post_type'      => 'product',
-        'posts_per_page' => 4,
+        'posts_per_page' => 12,
         'product_cat'    => 'beer'
     );
 
