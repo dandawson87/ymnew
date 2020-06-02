@@ -1446,7 +1446,8 @@ a:hover .nav-title,
 }
 
 #navtop {
-	background-color: #ede929;
+	background-color: #26bbad;
+	border-bottom: 10px solid #dd2034;
 }
 
 .socialmenu {
@@ -1471,7 +1472,7 @@ a:hover .nav-title,
 @media screen 
 and (min-device-width : 1420px)  {
 		#top-menu li a {
-			color:#333333;
+			color:#ffffff;
 			font-family:'Roboto Condensed';
 			font-size:0.9em;
 			vertical-align:middle;
@@ -1547,7 +1548,7 @@ margin-right:auto;
 }
 
 .navigation-top a {
-	color: #222;
+	color: #000000;
 	font-weight: 600;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
@@ -1555,7 +1556,7 @@ margin-right:auto;
 
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a {
-	color: #767676;
+	color: #000000;
 }
 
 .main-navigation {
@@ -1571,7 +1572,7 @@ margin-right:auto;
 }
 
 .main-navigation ul {
-	background: #fff;
+	background: #000000;
 	list-style: none;
 	margin: 0;
 	padding: 0 1.5em;
@@ -5884,4 +5885,7 @@ width:100% !important;
 	display: none !important;
 }
 
+.menu-section-list{
+	color: #000;
+}
 

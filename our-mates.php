@@ -36,7 +36,7 @@ define('WP_DEBUG',true);
 			<img src='/wp-content/uploads/2019/07/arrow.png' style='margin-top:40%;' class="arrowbeer">
 		</div>
 		<div class="col-md-6" style="text-align:justify;">
-		<h3 style="color:#f17921 !important;">Larry Pale Ale</h3>
+		<h3 id="larry-mate" style="color:#f17921 !important;">Larry Pale Ale</h3>
 		<p>Everyone knows a Larry! He’s a summer lovin’ party shirt wearin’ kinda fella. In his element at the beach or a bbq, Larry is always frothing! He is your <a class='orangehashtag' href='https://www.facebook.com/hashtag/larrycan' target='_blank'>#larrycan</a> mate.</p>
 			<ul class="descriptionlist">
 				<li><b>Style:</b> Pale Ale</li>
@@ -49,7 +49,7 @@ define('WP_DEBUG',true);
 </div>
 <div class="row" onclick="window.location = '/product/donnie/';" style="width:80%; margin-left:auto; margin-right:auto; text-align:center; margin-top:3em;">
 				<div class="col-md-6" style="text-align:justify;">
-				<h3><a href='/product/donnie/' style='color:#1dbcad !important;'>Donnie Dark Ale</a></h3>
+				<h3 id="donnie-mate"><a href='/product/donnie/' style='color:#1dbcad !important;'>Donnie Dark Ale</a></h3>
 				<p>Donnie is the dark horse, the strong and silent type. He may seem a bit intimidating at first, but once you crack a beer with him you'll find that he's a smooth operator with a heart of gold. If you've got a mate like <a class='bluehashtag' href='https://www.facebook.com/hashtag/DonnieDarkale' target='_blank'>#donniedarkale</a>, 
 					you’ve got a mate for life. 
 					</p>
@@ -78,7 +78,7 @@ define('WP_DEBUG',true);
 			<img src='/wp-content/uploads/2019/07/arrow.png' class="arrowbeer" style='margin-top:40%;'>
 		</div>
 		<div class="col-md-6" style="text-align:justify;">
-		<h3 style="color:#f17921 !important;">Macca Aussie Lager</h3>
+		<h3 id="macca-mate" style="color:#f17921 !important;">Macca Aussie Lager</h3>
 		<p>
 			Macca likes to keep things simple. There’s no secret to his happiness besides an outdoor adventure and an old-fashioned chinwag. He’s your true blue mate who won’t
 			<a class='orangehashtag' href='https://www.facebook.com/hashtag/crackamacca' target='_blank'>#crackamacca</a> until he’s got a fish in the boat. 
@@ -94,7 +94,7 @@ define('WP_DEBUG',true);
 </div>
 <div class="row" onclick="window.location = '/product/sally/';" style="width:80%; margin-left:auto; margin-right:auto; text-align:center; margin-top:3em; margin-bottom:2em;">
 		<div class="col-md-6" style="text-align:justify;">
-		<h3 style="color:#f17921">Sally IPA</h3>
+		<h3 id="sally-mate" style="color:#f17921">Sally IPA</h3>
 		<p>
 			Sally’s passion for Australia’s backyard is no secret. A bold explorer of nature, she is always pushing the horizon for botanical beauties. Rain or shine, it’s always a good 
 			time with your mate <a class='bluehashtag' href='https://www.facebook.com/hashtag/SunshineSally' target='_blank'>#sunshinesally</a>.		

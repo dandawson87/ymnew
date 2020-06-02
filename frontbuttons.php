@@ -2,7 +2,7 @@
 ?>
 <div class="bigbuttons row">
 	<div class="col-4">
-		<a href='/ym-shop/'>
+		<a href='/category/good-beer/'>
 				<div class="buttonone">
 					GOOD BEER
 				</div>
@@ -13,7 +13,7 @@
 	</div>
 
 	<div class="col-4">
-		<a href='/ym-shop#merch'>
+		<a href='/category/good-mates'>
 				<div class="buttontwo">
 					GOOD MATES
 				</div>
@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="col-4">
-		<a href='/blog/'>
+		<a href='/category/good-times/'>
 				<div class="buttonthree">
 					GOOD TIMES
 				</div>

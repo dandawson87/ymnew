@@ -30,22 +30,6 @@ if(is_front_page()) {
 	</div><!-- .inner -->
 	</div><!-- .wrap -->
 </div><!-- .site-branding -->
-	<div class='gabsbutton'>
-		<div class="row">
-			<div class="col-md-2">
-
-			</div>
-			<div class="col-md-8" style="display:inline-flex;">
-				<div class="bannerbutton1" onclick="window.location='https://yourmatesbrewing.com/ym-shop';">Buy Beer Now</div>	
-			</div>
-			<div class="col-md-2">
-
-			</div>
-		</div>
-	</div>
-<p style="position: absolute; bottom: 1px; right: 1px; font-size: 6px;">
-	*Free Shipping to Sunshine Coast customers only. Further conditions apply, contact us for more details.
-</p> 
 <?php if ( is_front_page() ) : ?>
 	<div class="font-page-text">
 				<h1 class="site-title"></h1>
