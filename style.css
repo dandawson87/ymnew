@@ -1465,8 +1465,9 @@ a:hover .nav-title,
 
 .menu-mobile-menu-container {
 	width:75%;
-	display:inline-block;
 	margin-top:8px;
+	margin-right: 0;
+	margin-left: auto;
 }
 
 @media screen 
@@ -5889,3 +5890,6 @@ width:100% !important;
 	color: #000;
 }
 
+#top-menu li a{
+	color: white;
+}

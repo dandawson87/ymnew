@@ -157,10 +157,10 @@ $(document).ready(function() {
 				<span class="menu-header-title"><a href="/our-mates">Our Mates</a></span>
 			</header>
 			<ul class="menu-section-list">
-				<li><a href="#larry-mate">Larry</a></li>
-				<li><a href="#donnie-mate">Donnie</a></li>
-				<li><a href="#macca-mate">Macca</a></li>
-				<li><a href="#sally-mate">Sally</a></li>
+				<li><a href="/our-mates/#larry-mate">Larry</a></li>
+				<li><a href="/our-mates/#donnie-mate">Donnie</a></li>
+				<li><a href="/our-mates/#macca-mate">Macca</a></li>
+				<li><a href="/our-mates/#sally-mate">Sally</a></li>
 				<li><a href="/beer-locator">Beer Locator</a></li>
 			</ul>
 			<header class="menu-header">
