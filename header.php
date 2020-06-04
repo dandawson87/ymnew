@@ -143,38 +143,55 @@ $(document).ready(function() {
 			<header class="menu-header">
 				<span class="menu-header-title"><a href="/">Home</a></span>
 			</header>
+			<header class="menu-section">
+				<span class="menu-header-title"><a href="/our-story/">Story</a></span>
+			</header>
+			<ul class="menu-section-list">
+				<li><a href="/our-story/">Our Yarn</a></li>
+				<li><a href="/our-story/">Our Vision</a></li>
+				<li><a href="/our-story/">Sustainability</a></li>
+				<li><a href="/our-story/">Our Adventures</a></li>
+				<li><a href="/our-story/">Partnerships</a></li>
+			</ul>
+			<header class="menu-header">
+				<span class="menu-header-title"><a href="/our-mates">Our Mates</a></span>
+			</header>
+			<ul class="menu-section-list">
+				<li><a href="/our-mates/#larry-mate">Larry</a></li>
+				<li><a href="/our-mates/#donnie-mate">Donnie</a></li>
+				<li><a href="/our-mates/#macca-mate">Macca</a></li>
+				<li><a href="/our-mates/#sally-mate">Sally</a></li>
+				<li><a href="/beer-locator">Beer Locator</a></li>
+			</ul>
 			<header class="menu-header">
 				<span class="menu-header-title"><a href="/ym-shop">Shop</a></span>
 			</header>
 			<ul class="menu-section-list">
-					<li><a href="/product-category/merch/">Merch</a></li>
-					<li><a href="/product-category/beer/">Beer</a></li>
+					<li><a href="/product-category/beer/">Buy Beer</a></li>
+					<li><a href="/product-category/merch/">Buy Merch</a></li>
 					<li><a href="/cart/">Cart</a></li>
 					<li><a href="/checkout/">Checkout</a></li>
-			</ul>
-			<header class="menu-header">
-				<span class="menu-header-title"><a href="/drive-thru-menu/">Takeaways</a></span>
-			</header>
-			<header class="menu-header">
-				<span class="menu-header-title"><a href="/your-mates-brewhouse">The Brewhouse</a></span>
-			</header>
-			<ul class="menu-section-list">
-					<li><a href="/your-mates-brewhouse/#booknow">Book a Function</a></li>
-					<li><a href="/drink-menu/">Drinks Menu</a></li>
-					<li><a href="/food-menu/">Food Menu</a></li>
+					<li><a href="/kegs-eoi/">Kegs at Home</a></li>
 			</ul>
 			<header class="menu-header">
 				<span class="menu-header-title"><a href="/news">News</a></span>
 			</header>
+			<ul class="menu-section-list">
+				<li><a href="/category/good-beer/">Good Beer</a></li>
+				<li><a href="/category/good-mates/">Good Mates</a></li>
+				<li><a href="/category/good-times/">Good Times</a></li>
+				<li><a href="/">Subscribe</a></li>
+			</ul>
 			<header class="menu-header">
-				<span class="menu-header-title"><a href="/our-story">Our Yarn</a></span>
+				<span class="menu-header-title"><a href="/your-mates-brewhouse">Brewhouse</a></span>
 			</header>
-			<header class="menu-header">
-				<span class="menu-header-title"><a href="/our-mates">Our Mates</a></span>
-			</header>
-			<header class="menu-header">
-				<span class="menu-header-title"><a href="/contact">Contact</a></span>
-			</header>
+			<ul class="menu-section-list">
+					<li><a href="/drive-thru-menu/">Takeaways</a></li>
+					<li><a href="/food-menu/">Food Menu</a></li>
+					<li><a href="/drinks-menu/">Drinks Menu</a></li>
+					<li><a href="/your-mates-brewhouse">Functions</a><li>
+					<li><a href="/contact">Contact Us</a></li>
+			</ul>
 		</section>
 	</nav>
 <main id="panel" class="panel">

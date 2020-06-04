@@ -29,14 +29,19 @@
 <div class="row" style="width:80%; margin-left:auto; margin-right:auto; text-align:center;">
 		<div class="col-md-6" style="text-align:center;">
 			<img src="/wp-content/uploads/2019/07/mattnmcgazzacopped.png"> 
-			<h3>"WE DIDN'T WANT TO CREATE JUST ANY OLD BEER COMPANY, BUT A BRAND THAT REPRESENTS A LIFE STYLE."</h3>
+			<h3>"How hard could it really be?"</h3>
 			<br>
-			<img src="/wp-content/uploads/2019/07/heppandmcgaz.png" id='img2'> 
-			<h3 id='heading2'>"We were literally working 90+ hours a week perfecting our recipe, running sales, accounts, deliveries, events 
-				whilst working our bar jobs to ensure we could float our tiny business"</h3>
+			<img src="/wp-content/uploads/2020/06/Moving.jpg" id='img2'> 
+			<h3 id='heading2'>"We would bribe all our mates with free beer and pool comps to give us a hand"</h3>
 			<br>
-			<img src="/wp-content/uploads/2019/07/hepandmcgazzaold.png" id='img3'> 
-			<h3 id='heading1'>"While it may appear from the outside that we are two blokes drinking beer for a living, the reality is that we have spent the last five years living and breathing Your Mates"</h3>
+			<img src="/wp-content/uploads/2019/07/heppandmcgaz.png" id='img3'> 
+			<h3 id='heading1'>"At least the beers were free!"</h3>
+			<br>
+			<img src="/wp-content/uploads/2020/06/IMG_8916-2.jpg" id='img4'>
+			<h3>"Ya kidding aren't ya?! McGarry, we need to brew more beer!"</h3>
+			<br>
+			<img src="/wp-content/uploads/2020/06/gbgmgts.jpg" id="img5">
+			<h3>It's all about drinking good beers with good mates having a good time</h3>
 		</div>
 		<div class="col-md-6" style="text-align:justify;">
 		<?php 

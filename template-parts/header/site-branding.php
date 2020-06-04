@@ -43,9 +43,6 @@ if(is_front_page()) {
 			</div>
 		</div>
 	</div>
-<p style="position: absolute; bottom: 1px; right: 1px; font-size: 6px;">
-	*Free Shipping to Sunshine Coast customers only. Further conditions apply, contact us for more details.
-</p> 
 <?php if ( is_front_page() ) : ?>
 	<div class="font-page-text">
 				<h1 class="site-title"></h1>
