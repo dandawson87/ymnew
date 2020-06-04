@@ -19,7 +19,7 @@
 	padding-top:0px !important;
 }
 </style>
-<div class="backgroundimage" style="background-image:url('/wp-content/uploads/2020/01/HERO_1.png');"></div>
+<div class="backgroundimage" style="background-image:url('/wp-content/uploads/2020/03/thecru.jpg');"></div>
 		<header class="page-header">
 			<h1 class="page-title"><?php single_post_title(); ?></h1>
 		</header>

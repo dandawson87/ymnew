@@ -153,7 +153,7 @@ $(document).ready(function() {
 					<li><a href="/checkout/">Checkout</a></li>
 			</ul>
 			<header class="menu-header">
-				<span class="menu-header-title"><a href="/your-mates-finder/">Watering Holes</a></span>
+				<span class="menu-header-title"><a href="/drive-thru-menu/">Takeaways</a></span>
 			</header>
 			<header class="menu-header">
 				<span class="menu-header-title"><a href="/your-mates-brewhouse">The Brewhouse</a></span>

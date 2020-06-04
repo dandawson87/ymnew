@@ -541,6 +541,7 @@ add_action( 'wp_enqueue_scripts', 'wpmu_burger_menu_scripts' );
 	}
 
 	wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'quagger', get_stylesheet_directory_uri() . '/scripts/quagger.min.js', array( 'jquery' ) );
 
 	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 wp_enqueue_script("jquery-effects-core");
@@ -556,6 +557,7 @@ add_action( 'wp_enqueue_scripts', 'twentyseventeen_scripts' );
 function wpmu_burger_menu_scripts() {
 	
 	wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/scripts/burger-menu-script2.js', array( 'jquery' ) );
+	wp_enqueue_script( 'quagger', get_stylesheet_directory_uri() . '/scripts/quagger.min.js', array( 'jquery' ) );
  
 }
 add_action( 'wp_enqueue_scripts', 'wpmu_burger_menu_scripts' );
