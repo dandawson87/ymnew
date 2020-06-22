@@ -38,9 +38,9 @@
 	<div class="col-md-3"></div>
 	<div class="col-md-6" style="text-align:center;">
 		<h3>Live on the Sunshine Coast? </h3>
-		<p>Make sure you have our takeaway menu handy!</p>
-		<div onclick='window.location="https://yourmatesbrewing.com/takeaway-garden/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer; width:150px; margin-left:auto; margin-right:auto;'>
-			Takeaway Menu	
+		<p>Check out our brand new menu!</p>
+		<div onclick='window.location="https://yourmatesbrewing.com/ym-food-menu/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer; width:150px; margin-left:auto; margin-right:auto;'>
+			2020 food menu	
 		</div>
 	</div>
 	<div class="col-md-3"></div>

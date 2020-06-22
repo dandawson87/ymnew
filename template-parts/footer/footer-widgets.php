@@ -21,12 +21,11 @@ if ( is_active_sidebar( 'sidebar-2' ) ||
 				<h3 class='footerunderline'> MENU </h3>
 				<div class="menufooterlinks">
 					<a class='footermenulink' href='/' style="font-family: 'Roboto Condensed', monospace;">Home</a><br>
-					<a class='footermenulink' href='/shop' style="font-family: 'Roboto Condensed', monospace;">Shop</a><br>
-					<a class='footermenulink' href='/your-mates-finder' style="font-family: 'Roboto Condensed', monospace;">Watering Holes</a><br>
-					<a class='footermenulink' href='/' style="font-family: 'Roboto Condensed', monospace;">The Brew House</a><br>
-					<a class='footermenulink' href='/news' style="font-family: 'Roboto Condensed', monospace;">News</a><br>
-					<a class='footermenulink' href='/our-story' style="font-family: 'Roboto Condensed', monospace;">Our Yarn</a><br>
+					<a class='footermenulink' href='/our-story' style="font-family: 'Roboto Condensed', monospace;">Story</a><br>
 					<a class='footermenulink' href='/our-mates' style="font-family: 'Roboto Condensed', monospace;">Our Mates</a><br>
+					<a class='footermenulink' href='/ym-shop' style="font-family: 'Roboto Condensed', monospace;">Shop</a><br>
+					<a class='footermenulink' href='/news' style="font-family: 'Roboto Condensed', monospace;">News</a><br>
+					<a class='footermenulink' href='/your-mates-brewhouse' style="font-family: 'Roboto Condensed', monospace;">The Brew House</a><br>
 					<a class='footermenulink' href='/contact/' style="font-family: 'Roboto Condensed', monospace;">Say G'Day</a><br>
 				</div>	
 			</div>
@@ -41,7 +40,7 @@ if ( is_active_sidebar( 'sidebar-2' ) ||
 						<a style='color:black !important; box-shadow:none !important;' href='tel:0753294733'>07 5329 4733</a>
 					</p>
 					<h5 style="color:black; font-family: 'Arial', monospace; font-weight:800; font-weight:bolder;"><b>FIND OUR BEER</b></h5>
-					<p><a style="color:black; font-family: 'Roboto Condensed', monospace; box-shadow:none !important;" href='/larry-locator/'>Beer Locator</a></p>
+					<p><a style="color:black; font-family: 'Roboto Condensed', monospace; box-shadow:none !important;" href='/beer-locator/'>Beer Locator</a></p>
 		
 				</div>
 			</div>

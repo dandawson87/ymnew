@@ -46,7 +46,7 @@ $( document ).ready(function() {
 	</div>
 	<div class="col-md-7 col-sm-12 foodmenuright">
 		<p>Our beers are brewed right here in the brew house, you can even watch our brewers hard at work while you sip on your favourite beer or wine</p>
-		<a href='/food-menu'>
+		<a href='/ym-food-menu'>
 			<button class="drinkmenubutton">Check out our food menu &nbsp; <i class="fa fa-beer" aria-hidden="true"></i> </button>
 		</a>
 			<button id='share-facebook-btn' class="sharebutton">
