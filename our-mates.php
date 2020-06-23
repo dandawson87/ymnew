@@ -114,6 +114,7 @@ define('WP_DEBUG',true);
 			<img src='/wp-content/uploads/2019/07/sallyslant.png'>
 		</div>
 </div>
+
 <div onclick="window.location = '/larry-locator/';" style="width:100%; margin-left:auto; margin-right:auto; text-align:left; height:8em; background:#f15d22; cursor:hand;" class="waterholescont">
 	<div class="row ourmatesfooter" style="width:80%; margin-left:auto; margin-right:auto;">
 		<div class="col-md-8 col-sm-12">

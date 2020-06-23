@@ -30,6 +30,19 @@ if(is_front_page()) {
 	</div><!-- .inner -->
 	</div><!-- .wrap -->
 </div><!-- .site-branding -->
+	<div class='gabsbutton'>
+		<div class="row">
+			<div class="col-md-2">
+
+			</div>
+			<div class="col-md-8" style="display:inline-flex;">
+				<div class="bannerbutton1" onclick="window.location='https://yourmatesbrewing.com/ym-shop';">Buy Beer Now</div>	
+			</div>
+			<div class="col-md-2">
+
+			</div>
+		</div>
+	</div>
 <?php if ( is_front_page() ) : ?>
 	<div class="font-page-text">
 				<h1 class="site-title"></h1>
