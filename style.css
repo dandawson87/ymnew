@@ -53,6 +53,15 @@ Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 @import url("mobile.css");
 @import url("tablet.css");
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 html {
 	font-family: sans-serif;
 	line-height: 1.15;
@@ -311,7 +320,7 @@ menu {
 }
 
 .sub-menu {
-	background-color: rgb(255,255,255,0.9) !important;
+	background-color: rgb(0,0,0,0.9) !important;
 	margin-top:15px;
 	color:black !important;
 }
@@ -1464,10 +1473,13 @@ a:hover .nav-title,
 }
 
 .menu-mobile-menu-container {
-	width:75%;
-	margin-top:8px;
-	margin-right: 0;
-	margin-left: auto;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+	padding-left:1em;
+    display: inline-block;
+    margin-top: 1em;
+    position: absolute;
 }
 
 @media screen 
