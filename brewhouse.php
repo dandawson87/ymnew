@@ -39,7 +39,7 @@
 		?>
 				<div class="row">
 					<div class="col-md-5">
-						<div onclick='window.location="/food-menu/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer;'>
+						<div onclick='window.location="/ym-food-menu/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer;'>
 							Food Menu	
 						</div>
 					</div>

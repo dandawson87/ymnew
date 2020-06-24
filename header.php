@@ -186,9 +186,8 @@ $(document).ready(function() {
 				<span class="menu-header-title"><a href="/your-mates-brewhouse">Brewhouse</a></span>
 			</header>
 			<ul class="menu-section-list">
-					<li><a href="/drive-thru-menu/">Takeaways</a></li>
-					<li><a href="/food-menu/">Food Menu</a></li>
-					<li><a href="/drinks-menu/">Drinks Menu</a></li>
+					<li><a href="/ym-food-menu/">Food Menu</a></li>
+					<li><a href="/ym-drinks-menu/">Drinks Menu</a></li>
 					<li><a href="/your-mates-brewhouse">Functions</a><li>
 					<li><a href="/contact">Contact Us</a></li>
 			</ul>

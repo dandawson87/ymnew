@@ -46,7 +46,7 @@ $( document ).ready(function() {
 	</div>
 	<div class="col-md-7 col-sm-12 foodmenuright">
 		<p>Our beers are brewed right here in the brew house, you can even watch our brewers hard at work while you sip on your favourite beer or wine</p>
-		<a href='/food-menu'>
+		<a href='/ym-food-menu'>
 			<button class="drinkmenubutton">Check out our food menu &nbsp; <i class="fa fa-beer" aria-hidden="true"></i> </button>
 		</a>
 			<button id='share-facebook-btn' class="sharebutton">
@@ -55,8 +55,8 @@ $( document ).ready(function() {
 		<button class="printbutton" onclick="window.print();">Print &nbsp; <i class="fa fa-print" aria-hidden="true"></i></button>
 	</div>
 </div>
-<div class="row" style="width:80%; margin-left:auto; margin-right:auto;">
-	<div class="col-md-3 col-sm-12">
+<div class="row" style="width:80%; margin-left:auto; margin-right:auto; justify-content:center;">
+	<div class="col-md-2 col-sm-12">
 		<div class="logotextcontainer">
 				<img class="logotext" src='/wp-content/uploads/2019/07/larry-text.png' style='width:80%;'>
 		</div>
@@ -72,7 +72,7 @@ $( document ).ready(function() {
 			</ul>
 
 	</div>	
-	<div class="col-md-3 col-sm-12">
+	<div class="col-md-2 col-sm-12">
 		<div class="logotextcontainer">
 				<img class="logotext" src='/wp-content/uploads/2019/07/Macca-Text.png' style='width:80%; margin-top:20px;'>
 		</div>
@@ -88,7 +88,7 @@ $( document ).ready(function() {
 				<li><b>ABV:</b> 3.5% </li>
 			</ul>
 	</div>	
-	<div class="col-md-3 col-sm-12">
+	<div class="col-md-2 col-sm-12">
 		<div class="logotextcontainer">
 				<img class="logotext" src='/wp-content/uploads/2019/07/sally-text.png' style='width:85%; margin-top:15px;'>
 		</div>
@@ -100,12 +100,12 @@ $( document ).ready(function() {
 		</p>
 			<ul class="descriptionlist">
 				<li><b>Flavours:</b> Indian Pale Ale, Hoppy</li>
-				<li><b>Body:</b> Medium Bodied</li>
-				<li><b>IBU:</b> 4</li>
+				<li><b>Body:</b> Medium</li>
+				<li><b>IBU:</b> 40</li>
 				<li><b>ABV:</b> 6.0% </li>
 			</ul>
 	</div>	
-	<div class="col-md-3 col-sm-12">
+	<div class="col-md-2 col-sm-12">
 		<div class="logotextcontainer">
 				<img class="logotext" src='/wp-content/uploads/2019/07/donnie-text.png' style='width:80%;'>
 		</div>
@@ -120,6 +120,22 @@ $( document ).ready(function() {
 				<li><b>Body:</b> Full Bodied</li>
 				<li><b>IBU:</b> 24</li>
 				<li><b>ABV:</b> 5.0% </li>
+			</ul>
+	</div>	
+	<div class="col-md-2 col-sm-12">
+		<div class="logotextcontainer">
+				<img class="logotext" src='/wp-content/uploads/2020/06/eddie-text.png' style='width:80%;'>
+		</div>
+		<h5>Eddie - XPA</h5>
+		<p class="descriptiontext">
+		The froth level is always dialled to 11 when you’re with Your Mate Eddie. The ultimate yes man, Eddie buzzes with infectious energy and is 
+		constantly chasing his next adventure. He’s all gas and no brakes with no time for hangovers. You ain’t truly livin’ unless 
+		you’ve got a mate like #ExtremeEddie.</p>
+			<ul class="descriptionlist">
+				<li><b>Flavours:</b> Tropical aroma with hints of pine and resin</li>
+				<li><b>Body:</b> Light</li>
+				<li><b>IBU:</b> 15</li>
+				<li><b>ABV:</b> 3.5% </li>
 			</ul>
 	</div>	
 </div>
@@ -148,24 +164,14 @@ $( document ).ready(function() {
 			<div  class="col-md-3">Bottle</div>
 		</div>
 		<div class="row">
-			<div  class="col-md-6">Clovely Estate Sparkling NV Brut, QLD</div>
+			<div  class="col-md-6">Clovely Estate Brut B</div>
 			<div  class="col-md-3">8</div>
 			<div  class="col-md-3">36</div>
 		</div>
 		<div class="row">
 			<div  class="col-md-6">Zonte’s Footsteps Proseco SA</div>
-			<div  class="col-md-3">8</div>
+			<div  class="col-md-3">10</div>
 			<div  class="col-md-3">45</div>
-		</div>
-		<div class="row">
-			<div  class="col-md-6">Champagne Bernard Remy, FRANCE</div>
-			<div  class="col-md-3">8</div>
-			<div  class="col-md-3">99</div>
-		</div>
-		<div class="row">
-			<div  class="col-md-6">Clovely Estate Sparkling NV Brut, QLD</div>
-			<div  class="col-md-3">8</div>
-			<div  class="col-md-3">36</div>
 		</div>
 		<div class="row" style='border-bottom:2px dotted #f15d22; margin-top:20px; margin-bottom:5px;'>
 			<div  class="col-md-6"><b>WHITE</b></div>
@@ -173,39 +179,19 @@ $( document ).ready(function() {
 			<div  class="col-md-3">Bottle</div>
 		</div>
 		<div class="row">
-			<div  class="col-md-6">Mackenzie William Riesling, SA</div>
-			<div  class="col-md-3">8</div>
-			<div  class="col-md-3">50</div>
-		</div>
-		<div class="row">
-			<div  class="col-md-6">Yarran Pinot Grigio, NSW</div>
+			<div  class="col-md-6">Clovely Estate Sem Sav B</div>
 			<div  class="col-md-3">8</div>
 			<div  class="col-md-3">36</div>
 		</div>
 		<div class="row">
-			<div  class="col-md-6">Clovely Estate SSB, QLD</div>
+			<div  class="col-md-6">Yarran Chardonnay</div>
 			<div  class="col-md-3">8</div>
 			<div  class="col-md-3">36</div>
 		</div>
 		<div class="row">
-			<div  class="col-md-6">Mistaken Identity Sauvignon Blanc, NZ</div>
-			<div  class="col-md-3">-</div>
-			<div  class="col-md-3">38</div>
-		</div>
-		<div class="row">
-			<div  class="col-md-6">Yarran Chardonnay, NSW</div>
+			<div  class="col-md-6">Yarran Pinot Grigio</div>
 			<div  class="col-md-3">8</div>
 			<div  class="col-md-3">36</div>
-		</div>
-		<div class="row">
-			<div  class="col-md-6">Little Gem Chardonnay, NSW</div>
-			<div  class="col-md-3">-</div>
-			<div  class="col-md-3">60</div>
-		</div>
-		<div class="row">
-			<div  class="col-md-6">Tru Su Rose, SA</div>
-			<div  class="col-md-3">10</div>
-			<div  class="col-md-3">43</div>
 		</div>
 		<div class="row" style='border-bottom:2px dotted #f15d22; margin-top:20px; margin-bottom:5px;'>
 			<div  class="col-md-6"><b>RED</b></div>
@@ -213,24 +199,29 @@ $( document ).ready(function() {
 			<div  class="col-md-3">Bottle</div>
 		</div>
 		<div class="row">
-			<div  class="col-md-6">Singers Lane Pinot Noir, VIC</div>
+			<div  class="col-md-6">Brockenchack Zip Line Shiraz</div>
+			<div  class="col-md-3">11</div>
+			<div  class="col-md-3">52</div>
+		</div>
+		<div class="row">
+			<div  class="col-md-6">Costanzo Pinot Noir</div>
 			<div  class="col-md-3">11</div>
 			<div  class="col-md-3">54</div>
 		</div>
 		<div class="row">
-			<div  class="col-md-6">Clovely Estate Cabernet Merlot, QLD</div>
+			<div  class="col-md-6">Brockenchack Rose</div>
+			<div  class="col-md-3">10</div>
+			<div  class="col-md-3">43</div>
+		</div>
+		<div class="row">
+			<div  class="col-md-6">Duffy Mosacto</div>
+			<div  class="col-md-3">10</div>
+			<div  class="col-md-3">43</div>
+		</div>
+		<div class="row">
+			<div  class="col-md-6">Clovely Estate Cabernet Merlo</div>
 			<div  class="col-md-3">8</div>
 			<div  class="col-md-3">36</div>
-		</div>
-		<div class="row">
-			<div  class="col-md-6">Zipline Shiraz, SA</div>
-			<div  class="col-md-3">-</div>
-			<div  class="col-md-3">52</div>
-		</div>
-		<div class="row">
-			<div  class="col-md-6">Sfera Cabernet Sauvignon, SA</div>
-			<div  class="col-md-3">-</div>
-			<div  class="col-md-3">44</div>
 		</div>
 	</div>
 	<div class="col-md-6 col-sm-12">
@@ -250,17 +241,12 @@ $( document ).ready(function() {
 			<div  class="col-md-12">Strawberry, Ginger, Passionfruit</div>
 		</div>
 		<div class="row" style='margin-bottom:5px;'>
-			<div  class="col-md-9"><b>KOMBUCHA</b></div>
-			<div  class="col-md-3">4.5</div>
-			<div  class="col-md-12">Strawberry, Ginger, Passionfruit</div>
-		</div>
-		<div class="row" style='margin-bottom:5px;'>
 			<div  class="col-md-9"><b>SOFT DRINK</b></div>
 			<div  class="col-md-3">3.5</div>
-			<div  class="col-md-12">Coke, Diet Coke, Lemonade, Fanta </div>
+			<div  class="col-md-12">Coke, Diet Coke, Sprite, Fanta </div>
 		</div>
 		<div class="row" style='margin-bottom:5px;'>
-			<div  class="col-md-9"><b>Juice</b></div>
+			<div  class="col-md-9"><b>NOAH'S JUICE</b></div>
 			<div  class="col-md-3">4.5</div>
 			<div  class="col-md-12">Apple, Orange</div>
 		</div>
