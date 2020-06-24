@@ -37,7 +37,7 @@
 <div class="row" style="margin-top:1em;">
 	<div class="col-md-3"></div>
 	<div class="col-md-6" style="text-align:center;">
-		<h3>Check out our brand new menu!</h3>
+		<h3>Check out our new menu!</h3>
 		<div onclick='window.location="https://yourmatesbrewing.com/ym-food-menu/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer; width:150px; margin-left:auto; margin-right:auto;'>
 			2020 food menu	
 		</div>
