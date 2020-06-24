@@ -124,7 +124,7 @@ $( document ).ready(function() {
 	</div>	
 	<div class="col-md-2 col-sm-12">
 		<div class="logotextcontainer">
-				<img class="logotext" src='/wp-content/uploads/2019/07/eddie-text.png' style='width:80%;'>
+				<img class="logotext" src='/wp-content/uploads/2020/06/eddie-text.png' style='width:80%;'>
 		</div>
 		<h5>Eddie - XPA</h5>
 		<p class="descriptiontext">
