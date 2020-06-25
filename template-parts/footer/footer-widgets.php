@@ -56,7 +56,7 @@ if ( is_active_sidebar( 'sidebar-2' ) ||
 								<li>Thursday: 11am - 9pm</li>
 								<li>Friday: 11am - 11pm</li>
 								<li>Saturday: 11am - 11pm</li>
-								<li>Sunday: 11am - 9pm</li>
+								<li>Sunday: 11am - 5pm</li>
 						</ul>
 					</p>
 				</div>
