@@ -46,7 +46,7 @@
 					<div class="col-md-2">
 					</div>
 					<div class="col-md-5">
-						<div onclick='window.location="/drink-menu/";'  id='mobbut2' class="littlebuttonone" style='margin-top:0px; cursor:pointer;'>
+						<div onclick='window.location="/ym-drinks-menu/";'  id='mobbut2' class="littlebuttonone" style='margin-top:0px; cursor:pointer;'>
 							Drink Menu	
 						</div>
 					</div>
