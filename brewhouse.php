@@ -78,9 +78,9 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<a href='/wp-content/uploads/2019/10/YM-Brewhouse-Function-Package.pdf' download="Your Mates Brewhouse Menu.pdf">
+						<a href='/yourmatesbrewing.com/functions/'>
 						<div class="littlebuttonone" style='margin-top:0px; cursor:pointer; width:100%;' id='mobbut4'>
-							Download Info Pack
+							Functions Menu
 						</div>
 						</a>
 					</div>
