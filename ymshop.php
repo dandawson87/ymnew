@@ -63,7 +63,17 @@ $args = array( 'post_type' => 'product', 'posts_per_page' => 20,'product_cat' =>
 				?>
 					<div class='priceheader'>
 						<div class="slantysquaresubprice">
-							<h1 class="slantytextsubprice" style='color:#56b8ad;'>$<?php echo $product->regular_price; ?></h1>	
+							<?php
+				               if($product->product_type=='variable') {
+               				     $available_variations = $product->get_available_variations();
+								 $count = count($available_variations)-1;
+		  	                     $variation_id=$available_variations[$count]['variation_id']; 
+			                     $variable_product1= new WC_Product_Variation( $variation_id );
+           				         $regular_price = $variable_product1 ->regular_price;
+			                     $sales_price = $variable_product1 ->sale_price;
+								echo "<h1 class='slantytextsubprice; style='color:#56b8ad;'>$" . $regular_price . "</h1>";	
+                    			}
+							?>
 						</div>
 					</div>
 				</a>
@@ -116,7 +126,9 @@ $args = array( 'post_type' => 'product', 'posts_per_page' => 20,'product_cat' =>
 				$product = wc_get_product(12315);
 				echo "<a href='/" . get_permalink(12315) . "'>";
 				echo "<h1 class='beerheader'>" . $product->name . "</h1>";
+				if($product) { 
 				echo "<div class='mixedbeerphoto'>" . $product->get_image('woocommerce_single') . "</div>";
+				}
 				?>
 					<div class='priceheader'>
 						<div class="slantysquaresubprice">
