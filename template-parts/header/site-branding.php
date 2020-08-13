@@ -33,11 +33,6 @@ if(is_front_page()) {
 <?php if ( is_front_page() ) : ?>
 	<div class="font-page-text">
 				<h1 class="site-title"></h1>
-				<div class="taglinecontainer">
-					<div class='taglineym'>BREWING </div>
-					<div class='slantysquare'><div class='slantytext'>GOOD</div></div>
-					<div class='taglineym'>TIMES</div>
-				</div>
 				<a href='#content'><button style='color:white; background:none; border:2px solid white; border-radius:20px;
 												 padding:10px; position:relative; text-align:center; margin-left:auto; margin-right:auto; display:block;' class='menu-scroll-down'>Scroll for more</button></a>
 			<?php else : ?>
