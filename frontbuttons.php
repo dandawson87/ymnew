@@ -37,8 +37,8 @@
 <div class="row" style="margin-top:1em;">
 	<div class="col-md-3"></div>
 	<div class="col-md-6" style="text-align:center;">
-		<h3>King Donnie has arrived!</h3>
-		<div onclick='window.location="https://yourmatesbrewing.com/product/king-donnie/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer; width:150px; margin-left:auto; margin-right:auto;'>
+		<h3>Backyard Beers Pack!</h3>
+		<div onclick='window.location="https://yourmatesbrewing.com/product/backyard-beers-pack/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer; width:150px; margin-left:auto; margin-right:auto;'>
 			Buy Now	
 		</div>
 	</div>
