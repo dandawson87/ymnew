@@ -13,7 +13,7 @@
 	</div>
 
 	<div class="col-4">
-		<a href='/category/good-mates'>
+		<a href='/category/goodmates'>
 				<div class="buttontwo">
 					GOOD MATES
 				</div>
@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="col-4">
-		<a href='/category/good-times/'>
+		<a href='/category/goodtimes/'>
 				<div class="buttonthree">
 					GOOD TIMES
 				</div>

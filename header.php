@@ -148,10 +148,6 @@ $(document).ready(function() {
 			</header>
 			<ul class="menu-section-list">
 				<li><a href="/our-story/">Our Yarn</a></li>
-				<li><a href="/our-story/">Our Vision</a></li>
-				<li><a href="/our-story/">Sustainability</a></li>
-				<li><a href="/our-story/">Our Adventures</a></li>
-				<li><a href="/our-story/">Partnerships</a></li>
 			</ul>
 			<header class="menu-header">
 				<span class="menu-header-title"><a href="/our-mates">Our Mates</a></span>
