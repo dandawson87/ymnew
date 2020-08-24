@@ -102,9 +102,9 @@ $args = array( 'post_type' => 'product', 'posts_per_page' => 20,'product_cat' =>
 	echo "<div class='shopproductcontainer'>";
 			echo "<div class='mixedproductcontainer'>";
 				$product = wc_get_product(731);
+				if($product) {
 				echo "<a href='/" . get_permalink(731) . "'>";
 				echo "<h1 class='beerheader'>" . $product->name . "</h1>";
-				echo "<div class='mixedbeerphoto'>" . $product->get_image('woocommerce_single') . "</div>";
 				?>
 					<div class='priceheader'>
 						<div class="slantysquaresubprice">
@@ -113,6 +113,7 @@ $args = array( 'post_type' => 'product', 'posts_per_page' => 20,'product_cat' =>
 					</div>
 				</a>
 				<?php
+				}
 					$add_to_cart = do_shortcode('[add_to_cart_url id="731"]');
 				?>
 					<a href='<?php echo $add_to_cart; ?>'><div class="addtocartbutton" id="#addtocart" style="width:50%; margin-left:25%;">Add To Cart</div></a>
