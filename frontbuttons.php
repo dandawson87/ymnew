@@ -37,9 +37,9 @@
 <div class="row" style="margin-top:1em;">
 	<div class="col-md-3"></div>
 	<div class="col-md-6" style="text-align:center;">
-		<h3>Are you up for the #SaltySambo challenge?</h3>
-		<div onclick='window.location="https://yourmatesbrewing.com/product/sambo/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer; width:150px; margin-left:auto; margin-right:auto;'>
-			Buy Now	
+		<h3>Holding a function?</h3>
+		<div onclick='window.location="https://yourmatesbrewing.com/functions/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer; width:150px; margin-left:auto; margin-right:auto;'>
+			Book now
 		</div>
 	</div>
 	<div class="col-md-3"></div>
