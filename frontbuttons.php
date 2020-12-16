@@ -37,9 +37,9 @@
 <div class="row" style="margin-top:1em;">
 	<div class="col-md-3"></div>
 	<div class="col-md-6" style="text-align:center;">
-		<h3>Holding a function?</h3>
-		<div onclick='window.location="https://yourmatesbrewing.com/functions/";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer; width:150px; margin-left:auto; margin-right:auto;'>
-			Book now
+		<h3>Vote 1 Larry!</h3>
+		<div onclick='window.location="https://www.gabsfestival.com/h100-aus-vote";' id='mobbut1' class="littlebuttonthree" style='margin-top:0px; cursor:pointer; width:150px; margin-left:auto; margin-right:auto;'>
+			Vote now
 		</div>
 	</div>
 	<div class="col-md-3"></div>
